@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden; }
+  body a {
+    color: inherit;
+    text-decoration: inherit; }
+
+.scroll-to-top {
+  z-index: 4;
+  font-size: 1rem;
+  color: white;
+  opacity: .6;
+  font-family: "Cinzel", serif;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4); }
+
+.scroll-to-top:hover {
+  opacity: 1; }

@@ -1,0 +1,44 @@
+
+$mainDark: #2C2C2C;
+$secondaryDark: #333;
+$fontPrimary: 'Cinzel', serif;
+$fontSecondary: 'Julius Sans One', sans-serif;
+$pureWhite: rgba(255, 255, 255, 1);
+$firmOrange: rgba(237, 92, 10, 1);
+
+
+
+// ------------------------------------ GENERAL
+
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    // background-color: $mainDark;
+    overflow-x: hidden;
+    a {
+        color: inherit;
+        text-decoration: inherit; 
+    }
+}
+
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-to-top {
+    z-index: 4;
+    font-size: 1rem;
+    color: $pureWhite;
+    opacity: .6;
+    font-family: $fontPrimary;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}

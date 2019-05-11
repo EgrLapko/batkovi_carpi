@@ -13,7 +13,7 @@ export default class Products extends Component {
           <img className="logo-dark" src="./images/icon.png" alt=""/>
           <Fade>
             <div className="products-text-container">
-              <h2>Наші особисті три стовпа нескінченності</h2>
+              <h2>Наші особисті три стовпи нескінченності</h2>
               <p>Пам'ятайте, що ми - не інтернет-магазин. Якщо ви хочете придбати якісь із цих божественних товарів, то напишіть нам
               на <span> Batkovi_Carpi@gmail.com </span> та зробіть замовлення. Або напишіть нам свою поштову адресу в поле нижче,
               і ми зв'яжемося із вами як тільки, так одразу.</p>

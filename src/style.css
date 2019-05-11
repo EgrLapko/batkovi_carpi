@@ -484,7 +484,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: white;
-  padding: 1rem; }
+  margin-bottom: 2rem; }
   .gallery-section .logo-dark {
     width: 4rem;
     padding: 1rem; }
@@ -524,8 +524,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 2rem; }
+    flex-wrap: wrap; }
   .gallery-section .section-1 {
     background-color: white;
     margin: 0;

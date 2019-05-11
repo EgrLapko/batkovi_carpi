@@ -357,7 +357,7 @@ body {
 
 .gallery-section {
     @include flexbox;
-    width: 70%;
+    width: 100%;
     margin: auto;
     flex-direction: column;
     background-color: $pureWhite;

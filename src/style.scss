@@ -367,7 +367,7 @@ body {
         padding: 1rem;
       }
     video {
-        padding: 2rem;
+        padding: 0rem;
     }
     .btn {
         font-size: 1rem;
@@ -378,6 +378,7 @@ body {
         background-color: $secondaryDark;
         font-family: $fontukrainian;
         padding: 1rem;
+        margin: 1rem 0;
         border-radius: 10px;
         transition: .2s;
       }
@@ -399,6 +400,8 @@ body {
     }
     .section-1 {
         background-color: $pureWhite;
+        margin: 0;
+        padding: 0;
     }
     .gallery-image {
         display: flex;
@@ -631,28 +634,32 @@ body {
             padding: 0;
         }
         .about-text-container {
-            width: 90%;
+            width: 100%;
+            padding: 0;
+            margin: 0; 
+            border-radius: 0%;
             p {
-                max-width: 100%;
+                max-width: 90%;
                 font-size: 1.1rem;
             }
         }
         .about-pictures-container {
-            width: 80%;
+            width: 100%;
             padding-bottom: 3rem;
+            margin: 0;
         }
         .flip-card {
-            width: 300px;
+            width: 80%;
             height: 350px;
             margin-top: 1rem;
+            border-radius: 0%;
         }
     }
     .gallery-section {
-       width: 100%;
-       padding: 0; 
+        width: 100%;
+        padding: 0; 
         .logo-dark {
-        margin-top: 10rem;
-        width: 3rem;
+            width: 3rem;
         }
         h2 {
             font-size: 2rem;
@@ -677,8 +684,8 @@ body {
     .products-inner-container {
         width: 100%;
         padding: 0; 
+        margin: auto;
         .logo-dark {
-        margin-top: 10rem;
         width: 3rem;
         }
         h2 {
@@ -686,17 +693,20 @@ body {
             padding: 0;
         }
         .products-text-container {
-            width: 90%;
+            width: 100%;
             font-size: 1.1rem;
+            padding: 0;
+            margin: 0;
+            border-radius: 0%;
         }
         .cards-container {
             width: 100%;
         }
         .card {
-            width: 85%;
-            padding: 1;
+            width: 100%;
+            padding: 1rem;
             img {
-                height: 400px;
+                height: 20rem;
             }
             h3 {
                 font-weight: 300;
@@ -710,7 +720,7 @@ body {
             justify-content: center;
         }
         .form-container {
-            width: 90%;
+            width: 100%;
             padding: 0;
             .form-inline {
                 flex-direction: column;

@@ -16,89 +16,88 @@ export default class LandingPage extends Component {
         <ParallaxBanner
             url="./images/img1_overlayed.jpg"
             title="Batkovi Carpi" 
-            text="What are your wishes? Where are you going? What are you aiming for? 
-            Do you strive for greatness or power? Your life begins, your life ends ... 
-            but the answer to everything is just one. And it`s..."
+            text="Чого ти бажаєш? Куди ти йдеш? Ти прагнеш величі? Чи ти прагнеш могутності?
+            Життя починається, життя закінчується, але відповідь на все лише одна. І я скажу її тобі..."
             height = "100"
           />
         <Section 
-            title="What is 'Batkovi Carpi'?"
-            text="Batkovi Carpi - it`s not just a grilled fish. It`s a philosophy.
-            Philosophy of living, philosophy of thinking. This is the way of life.
-            Whoever you are, whatever you do, wherever you go - Batkovi Carpi, after
-            you try it, will be always in your mind."
+            title="Що таке 'Батькові карпи'?"
+            text="Батькові карпи - це не просто смажена риба. Це філософія. Фіософія життя, 
+            філософія мислення. Це шлях, шлях самого буття. Неважливо хто ти, неважливо й те, 
+            що ти робиш, бо варто тобі хоча б торкнутись поглядом батькових карпів, 
+            вони назавжди залишуться в твоїх спогадах."
             color = "#FEFDFD"
             icon1 = "fas fa-fish"
-            icontext1 = "Not a fish, but a philosophy"
+            icontext1 = "Не просто риба, а філософія життя"
             icon2 = "fas fa-brain"
-            icontext2 = "Perfect for your brain"
+            icontext2 = "Розвиває мізки і не тільки"
             icon3 = "fas fa-globe-europe"
-            icontext3 = "Best quality in Europe"
+            icontext3 = "Краща якість в Європі і не тільки"
         />
         <ParallaxBanner2
             url="./images/img2_overlayed.jpg"
-            title="Brief history of Batkovi Carpi" 
-            text="The history of 'Batkovi Carpi' dates back to August 2018. At that time, the head of the family, 
-            Alexander, was at his dacha, and one sunny day he got an idea. An idea that changed the world. 
-            'What will happen if I cook some carps on the fire?', he thought. Despite the fact that it was the first 
-            experiment with cooking carps, the result was not only a culinary miracle, but a phenomen that 
-            started a whole philosophy trend.
-            'If you want to do it, just do it', said Alexander. 
-            With these words, he changed the world as soon as the last carp was prepared and moved from fire to a plate."
+            title="Коротка історія Батькових Карпів" 
+            text="Історія 'Батькових Карпів' бере початок з серпня 2018 року. В той час голова родини, Олександр,
+            перебував на своїй дачі, та й одного сонячного дня в нього з'явилась вона - ідея. Ідея, яка змінила
+            світ. 'Що буде, якщо я приготую трохи карпів на вогні' - подумав Олександр. Не дивлячись на те, що то був
+            лише перший, можливо навіть дещо скромний кулінарний експеримент з приготуванням карпів, результат виявився не 
+            просто кулінарним чудом, але й феноменом, що започаткувв декілька напрямків філософії життя.
+            'Якщо ти хочеш зробити це, то просто зроби. - каже Олександр.
+            Комусь ці слова можуть здатись тривіальними, бодай навіть банальними, але саме завдяки цим словам і цьому підходу
+            наш світ було змінено в ту мить, коли останній карп перемістився з розпеченого тла грилю на білу тарель."
             height = "65"
         />
         <Section 
-            title="'Batkiv Shaslik' - decades of proven quality"
-            text="If 'Batkovi Carpi' is a legendary product, but still a new one, then 'Batkiv shashlik' 
-            is a true legend. A product whose quality is the quintessence of years of experience, 
-            endeavor, experimentation, and love. And these are not empty words."
+            title="Батьків Шашлик - десятиліття підтвердженої якості"
+            text="Якщо 'Батькові Карпи', попри свою легендарність, все ж таки залишаються відносно новим продуктом, то
+            'Батьків Шашлик' - це дійсно справжня легенда. Феномен, чия якість є квінтесенцією років досвіду, великих зусиль,
+            експериментів і, звичайно, кохання. І це не порожні слова. "
             color = "#FEFDFD"
             icon1 = "fas fa-drumstick-bite"
-            icontext1 = "Pure, magnifficent taste"
+            icontext1 = "Першоджерельний, магічний смак"
             icon2 = "fas fa-utensils"
-            icontext2 = "Feels really good on your tongue"
+            icontext2 = "Чудові відчуття в роті та усюди"
             icon3 = "fas fa-weight"
-            icontext3 = "Good for your health and weight"
+            icontext3 = "Ідеально для твоїх краси та здоров'я"
         />
         <ParallaxBanner2
             url="./images/img3_overlayed.jpg"
-            title="Brief history of Batkiv Shashlik" 
-            text="The history of the 'Batkiv Shashlik' is so old that hardly anyone will tell about it. 
-            It is an elder book, forgotten on the shelf of an ancient library, hidden in the sands. 
-            But decades of practice, sharpening skills and experiments do their job. 
-            If you'll just try 'Batkiv Shashlik', you cannot look at other meat again. You will be reborn, 
-            will feel light, refresh your head, and start a clean slate of life. A life full of harmony, 
-            taste, and emotions.
-            'Just try it', says Alexander.
-            And your life will no longer be the same."
+            title="Коротка історія 'Батькового Шашлику'" 
+            text="Історія Батькового Шашлику настільки стародавня, що навряд чи знайдеться хоч хтось один такий, 
+            хто міг би розповісти її чистою, як вона є. Це наче древня книга, забута на полиці стародавньої, похованої
+            серед пісків часу, бібліотеці. Але десятиліття практики, відточування вмінь, рокий й роки експериментів
+            роблять своє діло. Лише торкнувшись кінчиком язика до 'Батькового шашлику', ти більше не зможеш дивитися 
+            на інше м'ясо ніколи знову. Ти переродишся, наповнишся світлом, освіжиш думки та цілу душу, і почнеш нове 
+            життя. Чисте, чесне, та щире. Життя, сповнене гармонією, смаком, та емоціями.
+            - Лише спробуй. - каже Олександр.
+            І після цього життя вже не буде озиратися назад."
             height = "65"
         />
         <Section 
-            title="Good Wine - it`s in our blood"
-            text="So, what makes a good wine good? And someone will exclaim- good grapes, tart flavor, noble aftertaste. 
-            Of course, they will be right, but ... would you really not want something more? 
-            Something memorable, something completely unbelievable? Something from which life will 
-            change with the first sip? Something... legendary? It's all about our wine, about our blood 
-            ... about 'Lapko's blood'."
+            title="Хороше вино - не просто в нашій крові. Це і є наша кров."
+            text="Що ж, що є хороше вино? І хтось беззаперечно скаже - якісний виноград, терпкий смак, благородні нотки
+            післясмаку. Звичайно, ці аргументи є правдивими, але... чи дійсно б тобі не хотілося б чогось більшого?
+            Чогось такого, щоб запам'яталося назавжди, такого, в що важко повірити? Чогось такого, щоб змінило життя 
+            з першого ж ковтка? Чогось... легендарного? Це все про наше вино... Це все про нашу кров... Про 'Кров Лапків'"
             color = "#FEFDFD"
             icon1 = "fas fa-wine-glass-alt"
-            icontext1 = "International proven quality"
+            icontext1 = "Якість, підстверджена міжнародними стандартами"
             icon2 = "fas fa-wine-bottle"
-            icontext2 = "Rare, magical taste and aftertaste"
+            icontext2 = "Рідкісний, магічний смак з тонким букетом жаданих спогадів"
             icon3 = "fas fa-smile-wink"
-            icontext3 = "Good for your mood and happiness"
+            icontext3 = "Для чудового настрою та теплих бесід і не тільки"
         />
         <ParallaxBanner2
             url="./images/img4_overlayed.jpg"
-            title="Brief history of 'Krow Lapkiv'" 
-            text="The story of 'Krow Lapkiv' '(Lapko`s Blood)' may seem trivial to someone, but do not be deceived. 
-            One day, the head of the family, Alexander, was walking throuigh his Mother`s garden, and saw some grapes, 
-            which was tearing 
-            through the thickness of an iron wicker fence, as if fleeing from the shadows in an earnest desire 
-            to come out into the light. Alexander stretched his hand to the grapes, tried it, and realized that 
-            this was exactly what he was looking for. He decided to try to make wine from this grape ... 
-            And from that moment on, the world has changed. 'Just try it', said Alexander. And indeed, the explanations 
-            are superfluous. Just try it."
+            title="Коротка історя 'Крові Лапків'" 
+            text= "Історія 'Крові Лапків' комусь, можливо, може здатись вельми тривіальною, але не дайте себе обманути. 
+            Все сталось того одного дня, коли голова родини, пан Олександр, гуляв городом своєї матері, 
+            та раптом побачив самотню китицю винограду, що пробивалася крізь товщу заліза плетеного паркану, наче 
+            намагаючись перемогти тінь та дістатись такого жаданого сонця. Олександр протягнув свої руки до винограду,
+            спробував його, і усвідомив що це - саме воно, це саме те, що він так давно шукав. Він вирішив спробувати
+            зробити вино з цієї китиці плодів... і з того часу світ вкотре змінився.
+            'Лише спробуй.' - каже Олександр.
+            І дійсно, пояснення тут зайві. Просто спробуй."
             height = "65"
         />
     </React.Fragment>

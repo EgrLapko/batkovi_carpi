@@ -12,7 +12,7 @@ function App() {
       <section>          
           <Navbar />
           <ScrollTop 
-            text="on top"
+            text="вгору"
             className="scroll-to-top"
             distance={300}
             style={{ 

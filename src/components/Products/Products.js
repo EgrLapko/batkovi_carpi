@@ -13,10 +13,10 @@ export default class Products extends Component {
           <img className="logo-dark" src="./images/icon.png" alt=""/>
           <Fade>
             <div className="products-text-container">
-              <h2>Our personal three parts of infinity</h2>
-              <p>Keep in mind that we are not usual e-commerce store. If you want to purchase some of these
-              godlike goodies, you have to email us on <span> Batkovi_Carpi@gmail.com </span> first to make and order. Or write your e-mail
-              in the section below and we will contact you as soon as possible.</p>
+              <h2>Наші особисті три стовпа нескінченності</h2>
+              <p>Пам'ятайте, що ми - не інтернет-магазин. Якщо ви хочете придбати якісь із цих божественних товарів, то напишіть нам
+              на <span> Batkovi_Carpi@gmail.com </span> та зробіть замовлення. Або напишіть нам свою поштову адресу в поле нижче,
+              і ми зв'яжемося із вами як тільки, так одразу.</p>
               
               <div className="form-container">
                   <form className="form-inline" action="">
@@ -32,9 +32,9 @@ export default class Products extends Component {
             <Fade bottom>
               <div className="card">
                 <img src="./images/wine2.jpg" alt=""/>
-                <h3>Wine "Krow Lapkiv", 0.7l</h3>
+                <h3>ВИно "Krow Lapkiv", 0.7l</h3>
                 <div className="product-details">
-                  <h3>150$ / bottle</h3>
+                  <h3>1500грн / пляшка</h3>
                 </div>
               </div>
             </Fade>
@@ -42,9 +42,9 @@ export default class Products extends Component {
             <Fade bottom>
               <div className="card">
                 <img src="./images/img2.jpg" alt=""/>
-                <h3>Batkovi Carpi</h3>
+                <h3>Батькові карпи</h3>
                 <div className="product-details">
-                  <h3>80$ / kg </h3>
+                  <h3>650грн / кг </h3>
                 </div>
               </div>
             </Fade>
@@ -52,9 +52,9 @@ export default class Products extends Component {
             <Fade bottom>
               <div className="card">
                 <img src="./images/shashlik1.jpg" alt=""/>
-                <h3>Batkiv Shashlik</h3>
+                <h3>Батьків Шашлик</h3>
                 <div className="product-details">
-                  <h3>95$ / kg</h3>
+                  <h3> 1050грн/ кг</h3>
                 </div>
               </div>
             </Fade>

@@ -3,6 +3,7 @@ $mainDark: #2C2C2C;
 $secondaryDark: #333;
 $fontPrimary: 'Cinzel', serif;
 $fontSecondary: 'Julius Sans One', sans-serif;
+$fontukrainian: 'Cormorant Unicase', serif;
 $pureWhite: rgba(255, 255, 255, 1);
 $firmOrange: rgba(237, 92, 10, 1);
 
@@ -12,7 +13,7 @@ $firmOrange: rgba(237, 92, 10, 1);
 
 body {
     margin: 0;
-    font-family: 'Cinzel', serif;
+    font-family: $fontukrainian;
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
@@ -34,8 +35,8 @@ body {
     z-index: 4;
     font-size: 1rem;
     color: $pureWhite;
+    font-family: $fontukrainian;
     opacity: .6;
-    font-family: $fontPrimary;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
 }
 
@@ -53,13 +54,12 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    width: 100%;
     min-height: 4rem;
     background-color: rgba(44, 44, 44, .99);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
     transition: .5s;
     li {
-        font-family: $fontPrimary;
+        font-family: $fontukrainian;
         margin-left: 1rem;
         margin-right: 1rem;
         font-size: 1.1rem;
@@ -79,7 +79,7 @@ body {
 // ------------------------------------ PARALLAX 
 
 .parallax-banner {
-    width: 100%;
+
     @include flexbox;
     background-size: cover;
     background-attachment: fixed;
@@ -100,22 +100,28 @@ body {
             margin: 0;
         }
         p {
-            font-size: 1rem;
+            font-size: 1.4rem;
             color: $pureWhite;
-            font-weight: 300;
-            font-family: $fontSecondary;
+            font-weight: 100;
+            font-family: $fontukrainian;
             cursor: default;
             margin: 0;
-            max-width: 60%;
+            max-width: 50%;
         }
   }
   .parallax-text-2 {
       h2{
-          font-size: 3rem;
+        font-size: 2.5rem;
+        font-family: $fontukrainian;
+      }
+      p {
+        font-size: 1.2rem;
+        font-family: $fontukrainian;
       }
   }
   .btn {
     font-size: 1.1rem;
+    font-family: $fontukrainian;
     margin-top: 3rem;
     color: $pureWhite;
     font-weight: 300;
@@ -145,16 +151,17 @@ body {
         text-align: center;
         padding: 0rem;
         h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            font-family: $fontukrainian;
             color: rgba(0, 0, 0, .7);
             font-weight: 300;
-            font-family: $fontSecondary;
             cursor: default;
             margin: 0;
         }
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             width: 100%;
+            font-family: $fontukrainian;
         }
     }
     .icons-container {
@@ -165,8 +172,9 @@ body {
             flex-direction: column;
             flex-wrap: wrap;
             width: 180px;
+            height: 200px;
             text-align: center;
-            opacity: 0.4;
+            opacity: .7;
             cursor: default;
             transition: .3s;
             i {
@@ -174,7 +182,7 @@ body {
             }
         }
         .section-icon:hover {
-            opacity: .7;
+            opacity: .9;
         }
     }
 }
@@ -367,7 +375,7 @@ body {
         text-transform: lowercase;
         border: none;
         background-color: $secondaryDark;
-        font-family: $fontPrimary;
+        font-family: $fontukrainian;
         padding: 1rem;
         border-radius: 10px;
         transition: .2s;
@@ -539,179 +547,178 @@ body {
 
 
 
-@media (max-width: 2560px) {
-    .navbar {
-        flex-direction: row;
-        li {
-            font-size: 1.1rem;
-        }
-    }
-}
+// @media (max-width: 2560px) {
+//     .navbar {
+//         flex-direction: row;
+//         li {
+//             font-size: 1.1rem;
+//         }
+//     }
+// }
 
-@media (max-width: 1440px) {
-    .navbar {
-        flex-direction: row;
-        li {
-            font-size: 1.2rem;
-        }
-    }
-}
+// @media (max-width: 1440px) {
+//     .navbar {
+//         flex-direction: row;
+//         li {
+//             font-size: 1.2rem;
+//         }
+//     }
+// }
 
-@media (max-width: 750px) {
-    .navbar {
-        flex-direction: column;
-        li {
-            font-size: 1.2rem;
-            line-height: 2.5rem;
-        }
-    }
-    .parallax-banner {
-        width: 100%;
-        margin: auto;
-        .parallax-text {
-            img {
-                width: 3rem;
-            }
-            h2 {
-                font-size: 4rem;
-                width: 100%;
-            }
-            p {
-                font-size: 1rem;
-                max-width: 90%;
-                margin-top: 2rem;
-            }
-        }
-        .parallax-text-2 {
-            h2 {
-                font-size: 2.2rem;
-            }
-            p {
-                font-size: .9rem;
-                max-width: 90%;
-                margin-top: 1rem;
-                line-height: 1.4rem;
-            }
-        }
-        .btn {
-            font-size: 1rem;
-            margin-top: 2rem;
-        }
-    }
-    .landing-section {
-        @include flexbox;
-        flex-direction: column;
-        .section-container {
-            max-width: 100%;
-            padding: 1rem;
-            h2 {
-                font-size: 2rem;
-                margin-top: 1rem;
-            }
-        }
-    }
-    .about-main-container {
-        width: 100%;
-        padding: 0;
-        .logo-dark {
-            margin-top: 10rem;
-            width: 3rem;
-        }
-        h2 {
-            font-size: 2rem;
-            padding: 0;
-        }
-        .about-text-container {
-            width: 90%;
-            p {
-                max-width: 100%;
-                font-size: 1.1rem;
-            }
-        }
-        .about-pictures-container {
-            width: 80%;
-            padding-bottom: 3rem;
-        }
-        .flip-card {
-            width: 300px;
-            height: 350px;
-            margin-top: 1rem;
-        }
-    }
-    .gallery-section {
-       width: 100%;
-       padding: 0; 
-        .logo-dark {
-        margin-top: 10rem;
-        width: 3rem;
-        }
-        h2 {
-            font-size: 2rem;
-            padding: 0;
-        }
-        video {
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-        .inner-section {
-            padding: 0rem;
-        }
-        .gallery-image {
-            width: 100%;
-            height: 250px;
-            margin: auto;
-            img:hover {
-                transform: none;
-            }
-        }
-    }
-    .products-inner-container {
-        width: 100%;
-        padding: 0; 
-        .logo-dark {
-        margin-top: 10rem;
-        width: 3rem;
-        }
-        h2 {
-            font-size: 2rem;
-            padding: 0;
-        }
-        .products-text-container {
-            width: 90%;
-            font-size: 1.1rem;
-        }
-        .cards-container {
-            width: 100%;
-        }
-        .card {
-            width: 85%;
-            padding: 1;
-            img {
-                height: 400px;
-            }
-            h3 {
-                font-weight: 300;
-                font-size: 1.3rem;
-            }
-        }
-        .card:hover {
-            transform: none;
-        }
-        .product-details {
-            justify-content: center;
-        }
-        .form-container {
-            width: 90%;
-            padding: 0;
-            .form-inline {
-                flex-direction: column;
-                input {
-                    margin-bottom: .5rem;
-                }
-            }
-            .submit-btn {
-                margin-bottom: 1rem;
-            }
-        }
-    }
-}
+// @media (max-width: 750px) {
+//     .navbar {
+//         flex-direction: column;
+//         li {
+//             font-size: 1.2rem;
+//             line-height: 2.5rem;
+//         }
+//     }
+//     .parallax-banner {
+//         margin: auto;
+//         .parallax-text {
+//             img {
+//                 width: 3rem;
+//             }
+//             h2 {
+//                 font-size: 4rem;
+//                 width: 100%;
+//             }
+//             p {
+//                 font-size: 1rem;
+//                 max-width: 90%;
+//                 margin-top: 2rem;
+//             }
+//         }
+//         .parallax-text-2 {
+//             h2 {
+//                 font-size: 2.2rem;
+//             }
+//             p {
+//                 font-size: .9rem;
+//                 max-width: 90%;
+//                 margin-top: 1rem;
+//                 line-height: 1.4rem;
+//             }
+//         }
+//         .btn {
+//             font-size: 1rem;
+//             margin-top: 2rem;
+//         }
+//     }
+//     .landing-section {
+//         @include flexbox;
+//         flex-direction: column;
+//         .section-container {
+//             max-width: 100%;
+//             padding: 1rem;
+//             h2 {
+//                 font-size: 2rem;
+//                 margin-top: 1rem;
+//             }
+//         }
+//     }
+//     .about-main-container {
+//         width: 100%;
+//         padding: 0;
+//         .logo-dark {
+//             margin-top: 10rem;
+//             width: 3rem;
+//         }
+//         h2 {
+//             font-size: 2rem;
+//             padding: 0;
+//         }
+//         .about-text-container {
+//             width: 90%;
+//             p {
+//                 max-width: 100%;
+//                 font-size: 1.1rem;
+//             }
+//         }
+//         .about-pictures-container {
+//             width: 80%;
+//             padding-bottom: 3rem;
+//         }
+//         .flip-card {
+//             width: 300px;
+//             height: 350px;
+//             margin-top: 1rem;
+//         }
+//     }
+//     .gallery-section {
+//        width: 100%;
+//        padding: 0; 
+//         .logo-dark {
+//         margin-top: 10rem;
+//         width: 3rem;
+//         }
+//         h2 {
+//             font-size: 2rem;
+//             padding: 0;
+//         }
+//         video {
+//             width: 100%;
+//             margin-bottom: 1rem;
+//         }
+//         .inner-section {
+//             padding: 0rem;
+//         }
+//         .gallery-image {
+//             width: 100%;
+//             height: 250px;
+//             margin: auto;
+//             img:hover {
+//                 transform: none;
+//             }
+//         }
+//     }
+//     .products-inner-container {
+//         width: 100%;
+//         padding: 0; 
+//         .logo-dark {
+//         margin-top: 10rem;
+//         width: 3rem;
+//         }
+//         h2 {
+//             font-size: 2rem;
+//             padding: 0;
+//         }
+//         .products-text-container {
+//             width: 90%;
+//             font-size: 1.1rem;
+//         }
+//         .cards-container {
+//             width: 100%;
+//         }
+//         .card {
+//             width: 85%;
+//             padding: 1;
+//             img {
+//                 height: 400px;
+//             }
+//             h3 {
+//                 font-weight: 300;
+//                 font-size: 1.3rem;
+//             }
+//         }
+//         .card:hover {
+//             transform: none;
+//         }
+//         .product-details {
+//             justify-content: center;
+//         }
+//         .form-container {
+//             width: 90%;
+//             padding: 0;
+//             .form-inline {
+//                 flex-direction: column;
+//                 input {
+//                     margin-bottom: .5rem;
+//                 }
+//             }
+//             .submit-btn {
+//                 margin-bottom: 1rem;
+//             }
+//         }
+//     }
+// }

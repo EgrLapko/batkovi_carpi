@@ -34,14 +34,14 @@ export default class Gallery extends Component {
               
           <img className="logo-dark" src="./images/icon.png" alt=""/>
           <Fade>
-           <h2>Media gallery</h2>
+           <h2>Галерея</h2>
           </Fade>
 
           <Fade bottom>
             <video width="800" controls>
               <source src="./videos/Batkovi_Carpi.mp4" type="video/mp4"/>
             </video>
-            <button className="btn" onClick={this.toggleGallery}>Browse gallery</button>
+            <button className="btn" onClick={this.toggleGallery}>Відкрити галерею</button>
           </Fade>
 
 

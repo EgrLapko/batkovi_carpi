@@ -22,7 +22,7 @@ export default class ParallaxBanner2 extends Component {
                     <div className = "parallax-text-2">
                         <h2> {title} </h2>              
                         <p> {text} </p>
-                        <Link to= "/products" ><h3 className="btn">Order</h3></Link>             
+                        <Link to= "/products" ><h3 className="btn">Замовити</h3></Link>             
                     </div>
                 </Fade>        
             </div>

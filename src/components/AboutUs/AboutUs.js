@@ -13,13 +13,14 @@ export default class AboutUs extends Component {
         <img className="logo-dark" src="./images/icon.png" alt=""/>
         <Fade>
           <div className="about-text-container">
-            <h2>Who is Lapko family?</h2>
-            <p>The origin of the Lapko family takes its beginning from the time of the Tripoli kingdom, 
-            but information about the family`s origin has not reached our modern era. Now the Lapko family 
-            is not just a friendly, big family, but also a brand, a mark of quality, an example to follow for 
-            many companies, both large and small. The family’s philosophy rests on three pillars of 
-            its greatness - fried carps, kebabs, and red wine. And speaking about creating these three components, 
-            the Lapko family succeeded like no other in this world.</p>
+            <h2>Хто така родина Лапків?</h2>
+            <p> Джерела історії родини Лапко починається з далеких часів зачатку трипільської культури, але
+            якась конкретна інформація, що стосувалася б коріння цієї родини, на жаль, до наших часів не дійшла.
+            Зараз родина Лапко - це не просто дружня, велика родина, але й цілий бренд, знак якості, приклад, який
+            варто наслідувати і досвід, який варто переймати. Філософія родини лежить на трьох стовпах своєї величі - 
+            смажених карпах, шашликах, та червоному вині. І якщо ми кажемо про створення цих трьох складових, то родина
+            Лапко - справжній приклад того, як просте бажання стає справжнім прикладом майстерності ремесла.
+            </p>
           </div>  
         </Fade> 
         <div className="about-pictures-container">
@@ -27,12 +28,14 @@ export default class AboutUs extends Component {
           <Fade bottom>
             <div className="flip-card">
               <div className="front-side" style={{backgroundImage:"url(images/family/fam1.jpg)"}}>
-              <h4>Olexandr Lapko</h4>
+              <h4>Олександр Лапко</h4>
               </div>
               <div className="back-side">
-                <h3>Head of the family</h3>
-                <p>The head of the family and the inventor of the three main pillars of humanity - fried carps, 
-                kebabs, and red wine. Jack of all trades, skilled cook, loving father, philanthropist.</p>
+                <h3>Голова родини</h3>
+                <p>Голова родини та головний винахідних трьох стовпів, на яких тримається людство - 
+                смажених карпів, шашликів, та червоного вина. Майстер на всі руки, досвідчений кулінар,
+                улюбленим батько. Філантроп.
+                </p>
               </div>
             </div>
           </Fade>
@@ -40,13 +43,14 @@ export default class AboutUs extends Component {
           <Fade bottom>          
             <div className="flip-card">
               <div className="front-side" style={{backgroundImage:"url(images/family/fam2.jpg)"}}>
-              <h4>Olena Lapko</h4>
+              <h4>Олена Лапко</h4>
               </div>
               <div className="back-side">
-                <h3>Second head of the family</h3>
-                <p>The wife of Alexander. Master of fine sarcasm, the best break dancer in the country,
-                 the first and main taster of branded wine. The only muse of Alexander, a loving, 
-                 but not a trivial, mother, as well as an excellent cook.</p>
+                <h3>Шия родини</h3>
+                <p> Дружина Олександра. Майстер тонкого сарказму та жорсткої іронії. Краща танцюристка
+                break-dance в Україні, перший та головний дегустатор вина в світі. Єдина муза Олександра, улюблена,
+                але не дуже класична, мати, а також першокласний кухар.
+                </p>
               </div>
             </div>
           </Fade>     
@@ -54,12 +58,11 @@ export default class AboutUs extends Component {
           <Fade bottom> 
             <div className="flip-card">
               <div className="front-side" style={{backgroundImage:"url(images/family/fam3.jpg)"}}>
-              <h4>Yehor Lapko</h4>
+              <h4>Єгор Лапко</h4>
               </div>
               <div className="back-side">
-                <h3>The older son</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Старший син</h3>
+                <p>Дійсно старший. Найперший з дітей, хто побачив білий світ. І не забувайте.</p>
               </div>
             </div>
           </Fade>
@@ -67,12 +70,12 @@ export default class AboutUs extends Component {
           <Fade bottom>                                   
             <div className="flip-card">
               <div className="front-side" style={{backgroundImage:"url(images/family/fam4.jpg)"}}>
-              <h4>Anastation Lapko</h4>
+              <h4>Анастасія Лапко</h4>
               </div>
               <div className="back-side">
-                <h3>The older daughter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Старша Донька</h3>
+                <p>Та, що виштовхнула брата в світ, а сама вирішила подумати, чи варто воно того. Вирішила, що варто.
+                Поліглот, космополіт, любляча мати.</p>
               </div>
             </div>
           </Fade>    
@@ -80,12 +83,11 @@ export default class AboutUs extends Component {
           <Fade bottom> 
             <div className="flip-card">
               <div className="front-side" style={{backgroundImage:"url(images/family/fam5.jpg)"}}>
-              <h4>Stephen Lapko</h4>
+              <h4>Степан Лапко</h4>
               </div>
               <div className="back-side">
-                <h3>The youngest son</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Молодший син</h3>
+                <p>Так, молодший. Бо Єгор - старший.</p>
               </div>
             </div>
           </Fade> 
@@ -93,12 +95,11 @@ export default class AboutUs extends Component {
           <Fade bottom>           
             <div className="flip-card">
               <div className="front-side" style={{backgroundImage:"url(images/family/fam6.jpg)"}}>
-              <h4>Maria Lapko</h4>
+              <h4>Мар'я Лапко</h4>
               </div>
               <div className="back-side">
-                <h3>The youngest daughter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Молодша донька</h3>
+                <p>Дійсно молодша і дійсно донька</p>
               </div>
             </div>
           </Fade>                 

@@ -44,6 +44,10 @@ body {
     opacity: 1;
 }
 
+.logo-dark {
+    width: 4rem;
+    padding: 1rem;
+  }
 
 // ------------------------------------ NAVBAR
 
@@ -243,10 +247,6 @@ body {
     flex-direction: column;
     background-color: $pureWhite;
     padding: 1rem;
-    .logo-dark {
-        width: 4rem;
-        padding: 1rem;
-      }
     .about-text-container {
         @include flexbox;
         width: 75%;
@@ -357,15 +357,12 @@ body {
 
 .gallery-section {
     @include flexbox;
-    width: 100%;
+    width: 70%;
     margin: auto;
+    flex-wrap: wrap;
     flex-direction: column;
     background-color: $pureWhite;
-    margin-bottom: 2rem;
-    .logo-dark {
-        width: 4rem;
-        padding: 1rem;
-      }
+    padding: 1rem;
     video {
         padding: 0rem;
     }
@@ -435,10 +432,6 @@ body {
         padding: 1rem;
         margin: auto;
         background-color: $pureWhite;
-        .logo-dark {
-            width: 4rem;
-            padding: 1rem;
-          }
         h2 {
             font-weight: 300;
             font-size: 3rem;
@@ -625,9 +618,6 @@ body {
     .about-main-container {
         width: 100%;
         padding: 0;
-        .logo-dark {
-            width: 3rem;
-        }
         h2 {
             font-size: 2rem;
             padding: 0;
@@ -657,9 +647,6 @@ body {
     .gallery-section {
         width: 100%;
         padding: 0; 
-        .logo-dark {
-            width: 3rem;
-        }
         h2 {
             font-size: 2rem;
             padding: 0;
@@ -684,9 +671,6 @@ body {
         width: 100%;
         padding: 0; 
         margin: auto;
-        .logo-dark {
-        width: 3rem;
-        }
         h2 {
             font-size: 2rem;
             padding: 0;

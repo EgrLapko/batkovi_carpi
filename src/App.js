@@ -8,9 +8,8 @@ import ScrollTop from 'react-scrolltop-button';
 
 function App() {
   return (
-    <div className="App">
-      <section>          
-          <Navbar />
+    <React.Fragment>
+      <Navbar />
           <ScrollTop 
             text="вгору"
             className="scroll-to-top"
@@ -20,11 +19,10 @@ function App() {
               border: "1px solid rgba(255, 255, 255, .2)",
               borderRadius: "5px"
              }}
-          />;               
-          <Main />       
-          <Footer /> 
-      </section>
-    </div>
+          />               
+      <Main />       
+      <Footer /> 
+    </React.Fragment>                
   );
 }
 

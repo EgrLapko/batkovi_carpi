@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import {ProductProvider} from './context/context';
 
 ReactDOM.render(
-    (<BrowserRouter>
-        <App />
-    </BrowserRouter>
-    ), document.getElementById('root'));
+    <ProductProvider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </ProductProvider>
+    , document.getElementById('root'));
 
 
 serviceWorker.unregister();

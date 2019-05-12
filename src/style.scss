@@ -51,7 +51,7 @@ body {
 
 // ------------------------------------ NAVBAR
 
-.navbar {
+.navbar, .navbar-small {
     @include flexbox;
     list-style-type: none;
     position: sticky;
@@ -76,6 +76,49 @@ body {
     li:hover {
         color: $pureWhite;
     }
+    .hamburger {
+        @include flexbox;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .nav-logo {
+        @include flexbox;
+        width: 2rem;
+        height: 2rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.navbar-small {
+    display: none;
+}
+
+.slidemenu {
+    @include flexbox;
+    flex-direction: column;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: $mainDark;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+    transform: translateY(-100%);
+    li {
+        font-size: 1.6rem;
+        padding: .3rem;
+        color:rgba(255, 255, 255, .6);
+    }
+}
+
+.slide-visible {
+    transform: translateY(0%);
+    visibility: visible;
 }
 
 .active-class {
@@ -558,15 +601,24 @@ body {
             font-size: 1.2rem;
         }
     }
+    .slidemenu {
+        display: none;
+    }
 }
 
 @media (max-width: 750px) {
     .navbar {
-        flex-direction: column;
-        li {
-            font-size: 1.2rem;
-            line-height: 2.5rem;
-        }
+        display: none;
+    }
+    .navbar-small {
+        @include flexbox;
+        justify-content: space-between;
+        position: sticky;
+        z-index: 4;
+        top: 0;
+    }
+    .slidemenu {
+        @include flexbox;
     }
     .parallax-banner {
         margin: auto;

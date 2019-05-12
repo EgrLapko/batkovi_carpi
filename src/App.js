@@ -5,11 +5,13 @@ import Navbar from './components/Navbar/Navbar';
 import Main from './Main';
 import Footer from './components/Footer/Footer';
 import ScrollTop from 'react-scrolltop-button';
+import Sidebar from './components/Navbar/Sidebar';
 
 function App() {
   return (
     <React.Fragment>
       <Navbar />
+      <Sidebar />
           <ScrollTop 
             text="вгору"
             className="scroll-to-top"

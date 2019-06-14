@@ -2,56 +2,47 @@ const photos = [{
     photo: "./images/img1.jpg",
     id: 1,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/img1.jpg",
-  }, {
+  }, 
+  {
     photo: "./images/img2.jpg",
     id: 2,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/img2.jpg",
-  }, {
+  }, 
+  {
     photo: "./images/img3.jpg",
     id: 3,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/img3.jpg",
-  },  {
+  },  
+  {
     photo: "./images/img4.jpg",
     id: 4,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/img4.jpg",
-  }, {
+  }, 
+  {
     photo: "./images/wine1.jpg",
     id: 5,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/wine1.jpg",
-  }, {
+  }, 
+  {
     photo: "./images/wine2.jpg",
     id: 6,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/wine2.jpg",
-  }, {
+  }, 
+  {
     photo: "./images/shashlik1.jpg",
     id: 7,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/shashlik1.jpg",
-  }, {
+  }, 
+  {
     photo: "./images/grapes1.jpg",
     id: 8,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/grapes1.jpg",
-  }, {
+  }, 
+  {
     photo: "./images/grapes2.jpg",
     id: 9,
     caption: "",
-    subcaption: "",
-    thumbnail: "./images/grapes2.jpg",
-  }];
+  }
+];
 
   export default photos;

@@ -1,14 +1,22 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {ProductConsumer} from '../../context/context';
 
 export default class GalleryPhoto extends Component {
   render() {
 
-    const {imgSrc, openLightbox, index} = this.props;
+    const {imgSrc, photoId} = this.props;
 
     return (
-      <div className="gallery-image">
-        <img onClick={openLightbox} index={index} src = {imgSrc} alt="" />
-      </div>
+      <ProductConsumer>
+        {value => {
+          const {handleModal} = value;
+          return (
+            <div className="gallery-image">
+              <img onClick={() => handleModal(photoId, imgSrc)} id={photoId} src={imgSrc} alt="" />
+            </div>
+          )
+        }}
+      </ProductConsumer>
     )
   }
 }

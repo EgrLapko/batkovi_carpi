@@ -16,12 +16,12 @@ export default class Products extends Component {
               <h2>Наші особисті три стовпи нескінченності</h2>
               <p>Пам'ятайте, що ми - не інтернет-магазин. Якщо ви хочете придбати якісь із цих божественних товарів, то напишіть нам
               на <span> Batkovi_Carpi@gmail.com </span> та зробіть замовлення. Або напишіть нам свою поштову адресу в поле нижче,
-              і ми зв'яжемося із вами як тільки, так одразу.</p>
+              і ми зв'яжемося із вами як можна швидше</p>
               
               <div className="form-container">
                   <form className="form-inline" action="">
                     <input type="email" id="email" placeholder="Enter email" name="email"/>
-                    <a className="submit-btn" href='/'>Submit</a>
+                    <a className="submit-btn" href='/'>Добренько</a>
                   </form>
               </div>       
             </div>
@@ -32,9 +32,9 @@ export default class Products extends Component {
             <Fade bottom>
               <div className="card">
                 <img src="./images/wine2.jpg" alt=""/>
-                <h3>ВИно "Krow Lapkiv", 0.7l</h3>
+                <h3>Вино "Krow Lapkiv", 750мл</h3>
                 <div className="product-details">
-                  <h3>1500грн / пляшка</h3>
+                  <h3>1500грн</h3>
                 </div>
               </div>
             </Fade>
@@ -54,7 +54,7 @@ export default class Products extends Component {
                 <img src="./images/shashlik1.jpg" alt=""/>
                 <h3>Батьків Шашлик</h3>
                 <div className="product-details">
-                  <h3> 1050грн/ кг</h3>
+                  <h3> 1050грн / кг</h3>
                 </div>
               </div>
             </Fade>

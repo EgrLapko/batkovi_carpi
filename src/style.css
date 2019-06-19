@@ -25,6 +25,9 @@ body {
   width: 4rem;
   padding: 1rem; }
 
+button:focus {
+  outline: 0; }
+
 .navbar, .navbar-small {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +118,7 @@ body {
   background-color: #2C2C2C;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;

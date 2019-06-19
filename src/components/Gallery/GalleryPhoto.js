@@ -11,9 +11,11 @@ export default class GalleryPhoto extends Component {
         {value => {
           const {handleModal} = value;
           return (
-            <div className="gallery-image">
-              <img onClick={() => handleModal(photoId, imgSrc)} id={photoId} src={imgSrc} alt="" />
-            </div>
+            <React.Fragment>
+              <div className="gallery-image">
+                <img onClick={() => handleModal(photoId, imgSrc)} id={photoId} src={imgSrc} alt="" />
+              </div>
+            </React.Fragment>
           )
         }}
       </ProductConsumer>

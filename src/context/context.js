@@ -18,13 +18,20 @@ class ProductProvider extends Component {
         })
     }
 
+    closeMenu = () => {
+      this.setState({
+          openMenu: false
+      })
+  }
+
     // ----------- Open Photo Modal Window
     handleModal = (id, photo) => {
+      console.log(`current id is: ${id}, image path is: ${photo}`)
       this.setState({
         modalOpen: !this.state.modalOpen,
         imageSRC: photo,
         imageId: id
-      }, console.log(`id is: ${this.state.imageId}, image path is: ${this.state.imageSRC}`))
+      })
     }
 
     // ----------- Navigation between images
@@ -41,7 +48,8 @@ class ProductProvider extends Component {
           ...this.state,
           handleMenu: this.handleMenu,
           handleModal: this.handleModal,
-          nextImage: this.nextImage
+          nextImage: this.nextImage,
+          closeMenu: this.closeMenu
       }}>
           {this.props.children}
       </ProductContext.Provider>

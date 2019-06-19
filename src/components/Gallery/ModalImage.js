@@ -9,12 +9,12 @@ export default class ModalImage extends Component {
                     const {modalOpen, imageSRC, handleModal, nextImage, imageId} = value;
                     return (
                         <div className={"modal-container " + (modalOpen ? "visible" : '')}>
-                            <button className="btn move-btn">Left</button>
+                            <button className="btn move-btn">Тільки назад</button>
                             <div className="modal-image-container">
                                 <img src={imageSRC} id={imageId} alt=""/>
                             </div>   
                             <button className="btn modal-close-btn" onClick={handleModal}>Закрити</button> 
-                            <button className="btn move-btn" onClick={() => nextImage(imageId, imageSRC)}>Right</button>
+                            <button className="btn move-btn" onClick={() => nextImage(imageId, imageSRC)}>Тільки вперед</button>
                         </div>
                     )
                 }}

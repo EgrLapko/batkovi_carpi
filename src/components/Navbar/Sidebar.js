@@ -7,13 +7,13 @@ export default class Sidebar extends Component {
     return (
         <ProductConsumer>
             {value => {
-                const {openMenu} = value;
+                const {openMenu, closeMenu} = value;
                 return (
                     <ul className={"slidemenu " + (openMenu ? "slide-visible" : null)}>
-                        <li><NavLink exact to="/" activeClassName="active-class" >Головна</NavLink></li>
-                        <li><NavLink to="/about" activeClassName="active-class">Про нас</NavLink></li>
-                        <li><NavLink to="/gallery" activeClassName="active-class">Галерея</NavLink></li>
-                        <li><NavLink to="/products" activeClassName="active-class">Продукція</NavLink></li>
+                        <li><NavLink exact to="/" activeClassName="active-class" onClick={closeMenu} >Головна</NavLink></li>
+                        <li><NavLink to="/about" activeClassName="active-class" onClick={closeMenu} >Про нас</NavLink></li>
+                        <li><NavLink to="/gallery" activeClassName="active-class" onClick={closeMenu} >Галерея</NavLink></li>
+                        <li><NavLink to="/products" activeClassName="active-class" onClick={closeMenu} >Продукція</NavLink></li>
                     </ul>
                 )
             }}

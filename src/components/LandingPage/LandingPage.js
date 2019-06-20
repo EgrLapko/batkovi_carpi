@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import { ProductConsumer } from '../../context/context';
 
 import ParallaxBanner from '../ParallaxBanner/ParallaxBanner';
 import ParallaxBanner2 from '../ParallaxBanner/ParallaxBanner2';
 import Section from '../Section/Section';
-import { ProductConsumer } from '../../context/context';
 import { english, ukrainian } from '../../language';
 
 export default class LandingPage extends Component {

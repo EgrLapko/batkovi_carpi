@@ -10,7 +10,8 @@ class ProductProvider extends Component {
         imageSRC: '',
         imageId: '',
         ukr: true,
-        eng: false
+        eng: false,
+        showBio: false
     }
 
     // ----------- Change lang
@@ -60,6 +61,13 @@ class ProductProvider extends Component {
       })
     }
 
+    // ----------- Toggle Bio in About Section
+    toggleBio = () => {
+      this.setState({
+        showBio: ! this.state.showBio
+      })
+    }
+
   render() {
     return (
       <ProductContext.Provider value = {{
@@ -69,7 +77,8 @@ class ProductProvider extends Component {
           nextImage: this.nextImage,
           closeMenu: this.closeMenu,
           setENG: this.setENG,
-          setUKR: this.setUKR
+          setUKR: this.setUKR,
+          toggleBio: this.toggleBio
       }}>
           {this.props.children}
       </ProductContext.Provider>

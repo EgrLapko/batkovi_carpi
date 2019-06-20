@@ -42,6 +42,7 @@ export const ukrainian = {
      krowIcon1: "Якість, підтверджена міжнародними стандартами",
      krowIcon2: "Рідкісний, магічний смак з тонким букетом жаданих спогадів",
      krowIcon3: "Для чудового настрою та теплих бесід і не тільки для них",
+     toTopButton: "Вгору",
 
      // ---------- GALLERY
      btnClose: "Закрити",
@@ -63,6 +64,26 @@ export const ukrainian = {
      // ---------- ABOUT US
      aboutUsTitle: "Про родину Лапків",
      aboutUsMainText: "Джерела історії родини Лапків починається з далеких часів зачатку трипільської культури, але якась конкретна інформація, що стосувалася б коріння цієї родини, на жаль, до наших часів не дійшла. Зараз родина Лапків - це не просто дружня, велика родина, але й цілий бренд, знак якості, приклад, який варто наслідувати і досвід, який варто переймати. Філософія родини лежить на трьох стовпах світобудови - смажених карпах, шашликах, та червоному вині. І якщо ми кажемо про створення цих трьох складових, то родина Лапків - справжній приклад того, як просте бажання переростає у майстерність ремесла.",
+
+     fatherName: "Олександр Лапко",
+     motherName: "Олена Лапко",
+     yehorName: "Єгор Лапко",
+     nastyaName: "Анастасія Лапко",
+     stepanName: "Степан Лапко",
+     mariaName: "Марія Лапко",
+
+     fatherBio: "Голова родини та головний винахідних трьох стовпів, на яких тримається людство - смажених карпів, шашликів, та червоного вина. Майстер на всі руки, досвідчений кулінар, улюбленим батько. Філантроп",
+
+     motherBio: "Дружина Олександра. Майстер тонкого сарказму та жорсткої іронії. Краща танцюристка break-dance в Україні, перший та головний дегустатор вина в світі. Єдина муза Олександра, улюблена, але не дуже класична, мати, а також першокласний кухар.",
+
+     yehorBio: "Дійсно старший. Найперший з дітей, хто побачив білий світ. І не забувайте.",
+
+     nastyaBio: "Та, що виштовхнула брата в світ, а сама вирішила подумати, чи варто воно того. Вирішила, що варто. Поліглот, космополіт, любляча мати.",
+
+     stepanBio: "Так, молодший. В цій родині тільки один старший син.",
+
+     mariaBio: "Дійсно молодша і дійсно донька.",
+
 
 }
 
@@ -110,13 +131,14 @@ export const english = {
      krowIcon1: "Quality Assured by International Standards",
      krowIcon2: "A rare, magical flavor with a thin bunch of crafted memories",
      krowIcon3: "For a wonderful mood and warm conversations, and not only",
+     toTopButton: "On Top",
 
      // ---------- GALLERY
      btnClose: "Close",
      galleryTitle: "Gallery",
 
      // ---------- PRODUCTS
-     orderTitle: "Our Personali Three Pillars of Infinity",
+     orderTitle: "Our Personal Three Pillars of Infinity",
      orderText: "Remember that we are not an online store. If you want to buy some of these divine goods, write us at Batkovi_Carpi@gmail.com and make an order, or write us your mailing address in the box below and we'll get in touh with you as soon as possible",
      okButton: "OK",
      prodKrowDesc: 'Krow Lapkiv" wine, 750ml, ',
@@ -129,5 +151,25 @@ export const english = {
      // ---------- ABOUT US
      aboutUsTitle: "About Lapko Family",
      aboutUsMainText: "The sources of the Lapko family history begin with the time when Trypillian culture was born, but some specific information concerning the roots of this family, unfortunately, has not survived until nowadays. Now Lapko family is not just a friendly, large family, but also the brand, a sign of quality, a worth following example. Philosophy of the family lies on three pillars of eternity - roasted carps, shish kebabs, and red wine.    ",
+
+     fatherName: "Olexandr Lapko",
+     motherName: "Olena Lapko",
+     yehorName: "Yehor Lapko",
+     nastyaName: "Anastasia Lapko",
+     stepanName: "Stepan Lapko",
+     mariaName: "Maria Lapko",
+
+     fatherBio: "The head of the family and the main founder of three pillars of humanity - fried carps, shish kebab, and red wine. Master at all hands, an experienced cook, a beloved father. Philanthropist.",
+
+     motherBio: "Olexandr`s wife, a master of thin sarcasm and hard irony, the best break-dancer in Ukraine, the first and main wine tasting wizard. The only muse of Olexander, a beloved, but not very classic, mother, as well as a first-rate cook.",
+
+     yehorBio: "The oldest son. Really oldest, the first of the children who saw the white world, do not forget it.",
+
+     nastyaBio: "That one person who pushed her brother into the world first. Polyglot, cosmopolitan, loving mother.",
+
+     stepanBio: "The youngest son. Yes, youngest. There is only one eldest son in family.",
+
+     mariaBio: "The youngest daughter. Really youngest and really daughter.",
+
 
 }

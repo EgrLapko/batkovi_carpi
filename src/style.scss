@@ -49,6 +49,22 @@ body {
     padding: 1rem;
   }
 
+  .btn {
+    font-size: 1.1rem;
+    font-family: $fontukrainian;
+    margin-top: 3rem;
+    color: $pureWhite;
+    font-weight: 300;
+    text-transform: lowercase;
+    background-color: $secondaryDark;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .2s;
+  }
+  .btn:hover {
+      background-color: $firmOrange;
+  }
+
 button:focus {outline:0;}
 
 // ------------------------------------ NAVBAR
@@ -90,6 +106,22 @@ button:focus {outline:0;}
         height: 2rem;
         img {
             width: 100%;
+        }
+    }
+    .lang-section {
+        @include flexbox;
+        position: absolute;
+        right: 5rem;
+        width: 5%;
+        .lang-btn {
+            border: none;
+            margin: 0;
+            padding: .5rem;
+            border-radius: 0;
+            background-color: rgba(106, 105, 105, .3);
+        }
+        .lang-btn:hover {
+            background-color: $firmOrange;
         }
     }
 }
@@ -222,8 +254,9 @@ button:focus {outline:0;}
         .section-icon {
             @include flexbox;
             flex-direction: column;
+            padding: 1rem;
             flex-wrap: wrap;
-            width: 180px;
+            width: 13rem;
             height: 200px;
             text-align: center;
             opacity: .7;
@@ -402,15 +435,17 @@ button:focus {outline:0;}
 
 .gallery-section {
     @include flexbox;
-    width: 70%;
+    width: 80%;
     margin: auto;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: $pureWhite;
     padding: 1rem;
-    video {
+    iframe {
+        width: 80%;
         padding: 0rem;
         margin: 1rem 0;
+        border: none;
     }
     .btn {
         font-size: 1rem;
@@ -660,6 +695,9 @@ button:focus {outline:0;}
         flex-direction: column;
         .icons-container {
             flex-direction: column;
+            .section-icon {
+                padding: 0;
+            }
         }
         .section-container {
             max-width: 100%;
@@ -706,7 +744,7 @@ button:focus {outline:0;}
             font-size: 2rem;
             padding: 0;
         }
-        video {
+        iframe {
             width: 100%;
             margin-bottom: 1rem;
         }

@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 export default class ParallaxBanner2 extends Component {
   render() {
 
-    const {url, title, text, height} = this.props;
+    const {url, title, text, height, btnName} = this.props;
 
     const imgUrl = url;
     const imgHeight = height;
@@ -22,7 +22,7 @@ export default class ParallaxBanner2 extends Component {
                     <div className = "parallax-text-2">
                         <h2> {title} </h2>              
                         <p> {text} </p>
-                        <Link to= "/products" ><h3 className="btn">Замовити</h3></Link>             
+                        <Link to= "/products" ><h3 className="btn"> {btnName} </h3></Link>             
                     </div>
                 </Fade>        
             </div>

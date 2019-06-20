@@ -25,6 +25,23 @@ body {
   width: 4rem;
   padding: 1rem; }
 
+.btn {
+  font-size: 1.1rem;
+  font-family: "Cormorant Unicase", serif;
+  margin-top: 3rem;
+  color: white;
+  font-weight: 300;
+  text-transform: lowercase;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.btn:hover {
+  background-color: #ed5c0a; }
+
 button:focus {
   outline: 0; }
 
@@ -93,6 +110,27 @@ button:focus {
     height: 2rem; }
     .navbar .nav-logo img, .navbar-small .nav-logo img {
       width: 100%; }
+  .navbar .lang-section, .navbar-small .lang-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    right: 5rem;
+    width: 5%; }
+    .navbar .lang-section .lang-btn, .navbar-small .lang-section .lang-btn {
+      border: none;
+      margin: 0;
+      padding: .5rem;
+      border-radius: 0;
+      background-color: rgba(106, 105, 105, 0.3); }
+    .navbar .lang-section .lang-btn:hover, .navbar-small .lang-section .lang-btn:hover {
+      background-color: #ed5c0a; }
 
 .navbar-small {
   display: none; }
@@ -278,9 +316,10 @@ button:focus {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      padding: 1rem;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      width: 180px;
+      width: 13rem;
       height: 200px;
       text-align: center;
       opacity: .7;
@@ -550,7 +589,7 @@ button:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -560,9 +599,11 @@ button:focus {
   flex-direction: column;
   background-color: white;
   padding: 1rem; }
-  .gallery-section video {
+  .gallery-section iframe {
+    width: 80%;
     padding: 0rem;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    border: none; }
   .gallery-section .btn {
     font-size: 1rem;
     color: white;
@@ -897,6 +938,8 @@ button:focus {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
+      .landing-section .icons-container .section-icon {
+        padding: 0; }
     .landing-section .section-container {
       max-width: 100%;
       padding: 1rem; }
@@ -932,7 +975,7 @@ button:focus {
     .gallery-section h2 {
       font-size: 2rem;
       padding: 0; }
-    .gallery-section video {
+    .gallery-section iframe {
       width: 100%;
       margin-bottom: 1rem; }
     .gallery-section .inner-section {

@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import ParallaxBanner from '../ParallaxBanner/ParallaxBanner';
 import ParallaxBanner2 from '../ParallaxBanner/ParallaxBanner2';
 import Section from '../Section/Section';
+import { ProductConsumer } from '../../context/context';
+import { english, ukrainian } from '../../language';
 
 export default class LandingPage extends Component {
 
@@ -12,89 +14,76 @@ export default class LandingPage extends Component {
   
   render() {
     return (
-    <React.Fragment>
-        <ParallaxBanner
-            url="https://i.imgur.com/qcMNHfg.jpg"
-            title="Batkovi Carpi" 
-            text="Чого ти бажаєш? Куди ти йдеш? Чого ти прагнеш? Ти прагнеш величі? Чи ти прагнеш могутності?
-            Життя починається, життя закінчується, але відповідь на все лише одна. І я скажу її тобі..."
-            height = "100"
-          />
-        <Section 
-            title="Що таке 'Батькові карпи'?"
-            text="Батькові карпи - це не просто смажена риба. Це філософія. Фіософія життя, 
-            філософія мислення. Це шлях, шлях самого буття. Неважливо хто ти, неважливо й те, 
-            що ти робиш, бо варто тобі хоча б торкнутись поглядом батькових карпів, 
-            вони назавжди залишуться в твоїх спогадах."
-            color = "#FEFDFD"
-            icon1 = "fas fa-fish"
-            icontext1 = "Не просто риба, а філософія життя"
-            icon2 = "fas fa-brain"
-            icontext2 = "Розвиває мізки і не тільки"
-            icon3 = "fas fa-globe-europe"
-            icontext3 = "Краща якість в Європі і не тільки"
-        />
-        <ParallaxBanner2
-            url="https://i.imgur.com/ZczP30I.jpg"
-            title="Коротка історія Батькових Карпів" 
-            text="Історія 'Батькових Карпів' бере початок з серпня 2018 року. В той час голова родини, Олександр,
-            перебував на своїй дачі, та й одного сонячного дня в нього з'явилась вона - ідея. Ідея, яка змінила
-            світ. 'Чому б не приготувати трохи карпів на вогні' - подумав Олександр. Не дивлячись на те, що то був
-            лише перший, можливо навіть дещо скромний кулінарний експеримент, результат виявився не 
-            просто гастрономічним чудом, але й феноменом, що започаткувв декілька напрямків філософії життя.
-            'Якщо ти хочеш зробити це, то просто зроби. - каже Олександр.
-            Комусь ці слова можуть здатись тривіальними, але саме завдяки цим словам і цьому підходу
-            наш світ було змінено в ту мить, коли останній карп перемістився з розпеченого грилю на білу тарель."
-            height = "65"
-        />
-        <Section 
-            title="Батьків Шашлик - десятиліття підтвердженої якості"
-            text="Якщо 'Батькові Карпи', попри свою легендарність, все ж таки залишаються відносно новим продуктом, то
-            'Батьків Шашлик' - це дійсно справжня легенда. Феномен, чия якість є квінтесенцією років досвіду, великих зусиль,
-            експериментів і, звичайно, любові. І це не порожні слова. "
-            color = "#FEFDFD"
-            icon1 = "fas fa-drumstick-bite"
-            icontext1 = "Першоджерельний, магічний смак"
-            icon2 = "fas fa-utensils"
-            icontext2 = "Чудові відчуття в роті та усюди"
-            icon3 = "fas fa-weight"
-            icontext3 = "Ідеально для твоїх краси та здоров'я"
-        />
-        <ParallaxBanner2
-            url="https://i.imgur.com/DGeWacD.jpg"
-            title="Коротка історія 'Батькового Шашлику'" 
-            text="Історія Батькового Шашлику настільки стародавня, що навряд чи знайдеться хоч хтось один такий, 
-            хто міг би розповісти її чистою, як вона є. Це наче древня книга, забута на полиці стародавньої, похованої
-            серед пісків часу, бібліотеці. Але десятиліття практики, відточування вмінь, роки й роки експериментів
-            роблять своє діло. Лише торкнувшись кінчиком язика до 'Батькового шашлику', ти більше не зможеш дивитися 
-            на інше м'ясо ніколи знову. Ти переродишся, наповнишся світлом, освіжиш думки та цілу душу, і почнеш нове 
-            життя. Чисте, чесне, та щире. Життя, сповнене гармонією, смаком, та емоціями.
-            - Лише спробуй. - каже Олександр.
-            І після цього життя вже не буде озиратися назад."
-            height = "65"
-        />
-        <Section 
-            title="Хороше вино - не просто в нашій крові. Це і є наша кров."
-            text="Що ж, що є хороше вино? І хтось беззаперечно скаже - якісний виноград, терпкий смак, благородні нотки
-            післясмаку. Звичайно, ці аргументи є правдивими, але... чи не хотілося б тобі чогось більшого?
-            Чогось такого, щоб запам'яталося назавжди, такого, у що важко повірити? Чогось такого, щоб змінило життя 
-            з першого ж ковтка? Чогось... легендарного? Це все про наше вино... Це все про нашу кров... Про 'Кров Лапків'"
-            color = "#FEFDFD"
-            icon1 = "fas fa-wine-glass-alt"
-            icontext1 = "Якість, підтверджена міжнародними стандартами"
-            icon2 = "fas fa-wine-bottle"
-            icontext2 = "Рідкісний, магічний смак з тонким букетом жаданих спогадів"
-            icon3 = "fas fa-smile-wink"
-            icontext3 = "Для чудового настрою та теплих бесід і не тільки"
-        />
-        <ParallaxBanner2
-            url="https://i.imgur.com/fyJyAIa.jpg"
-            title="Коротка історія 'Крові Лапків'" 
-            text= "Історія 'Крові Лапків' комусь, можливо, може здатись вельми тривіальною, але не дайте себе обманути. Все сталось того одного дня, коли голова родини, пан Олександр, гуляв городом своєї матері, та раптом побачив самотню китицю винограду, що пробивалася крізь товщу заліза плетеного паркану, наче намагаючись перемогти тінь та дістатись такого жаданого сонця. Олександр протягнув свої руки до винограду, спробував його, і усвідомив що це - саме воно, це саме те, що він так давно шукав. Він вирішив спробувати зробити вино з цієї китиці плодів... і з того часу світ вкотре змінився. 'Лише спробуй.' - каже Олександр. І дійсно, пояснення тут зайві. Просто спробуй."
-            height = "65"
-        />
-    </React.Fragment>
     
+      <ProductConsumer>
+        {value => {
+          const { eng, ukr } = value;
+          return (
+            <React.Fragment>
+              <ParallaxBanner
+                url="https://i.imgur.com/qcMNHfg.jpg"
+                title="Batkovi Carpi" 
+                text={eng ? english.mainDesc : ukrainian.mainDesc}
+                height = "100"
+              />
+              <Section 
+                title={eng ? english.whatsCarpi : ukrainian.whatsCarpi}
+                text={eng ? english.whatsCarpiDesc : ukrainian.whatsCarpiDesc}
+                color = "#FEFDFD"
+                icon1 = "fas fa-fish"
+                icontext1 = {eng ? english.carpiIcon1 : ukrainian.carpiIcon1}
+                icon2 = "fas fa-brain"
+                icontext2 = {eng ? english.carpiIcon2 : ukrainian.carpiIcon2}
+                icon3 = "fas fa-globe-europe"
+                icontext3 = {eng ? english.carpiIcon3 : ukrainian.carpiIcon3}
+              />
+              <ParallaxBanner2
+                url="https://i.imgur.com/ZczP30I.jpg"
+                title={eng ? english.historyCarpiTitle : ukrainian.historyCarpiTitle}
+                text={eng ? english.historyCarpiText : ukrainian.historyCarpiText}
+                height = "65"
+                btnName={eng ? english.buttonName : ukrainian.buttonName}
+              />
+              <Section 
+                title={eng ? english.whatsShahlikTitle : ukrainian.whatsShahlikTitle}
+                text={eng ? english.whatsShahlikText : ukrainian.whatsShahlikText}
+                color = "#FEFDFD"
+                icon1 = "fas fa-drumstick-bite"
+                icontext1 = {eng ? english.shashlikIcon1 : ukrainian.shashlikIcon1}
+                icon2 = "fas fa-utensils"
+                icontext2 = {eng ? english.shashlikIcon2 : ukrainian.shashlikIcon2}
+                icon3 = "fas fa-weight"
+                icontext3 = {eng ? english.shashlikIcon3 : ukrainian.shashlikIcon3}
+              />
+              <ParallaxBanner2
+                url="https://i.imgur.com/DGeWacD.jpg"
+                title={eng ? english.historyShashlikTitle : ukrainian.historyShashlikTitle}
+                text={eng ? english.historyShashlikText : ukrainian.historyShashlikText}
+                height = "65"
+                btnName={eng ? english.buttonName : ukrainian.buttonName}
+              />
+              <Section 
+                title={eng ? english.whatsKrowTitle : ukrainian.whatsKrowTitle}
+                text={eng ? english.whatsKrowText : ukrainian.whatsKrowText}
+                color = "#FEFDFD"
+                icon1 = "fas fa-wine-glass-alt"
+                icontext1 = {eng ? english.krowIcon1 : ukrainian.krowIcon1}
+                icon2 = "fas fa-wine-bottle"
+                icontext2 = {eng ? english.krowIcon2 : ukrainian.krowIcon2}
+                icon3 = "fas fa-smile-wink"
+                icontext3 = {eng ? english.krowIcon3 : ukrainian.krowIcon3}
+              />
+              <ParallaxBanner2
+                url="https://i.imgur.com/fyJyAIa.jpg"
+                title={eng ? english.historyKrowTitle : ukrainian.historyKrowTitle}
+                text= {eng ? english.historyKrowText : ukrainian.historyKrowText}
+                height = "65"
+                btnName={eng ? english.buttonName : ukrainian.buttonName}
+              />
+            </React.Fragment>
+          )
+        }}
+      </ProductConsumer>
     )
   }
 }

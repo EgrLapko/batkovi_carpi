@@ -27,7 +27,7 @@ export default class AboutUs extends Component {
 
           <Fade bottom>
             <div className="flip-card">
-              <div className="front-side" style={{backgroundImage:"url(images/family/fam1.jpg)"}}>
+              <div className="front-side" style={{backgroundImage:"url(https://i.imgur.com/c1mwo4S.jpg)"}}>
               <h4>Олександр Лапко</h4>
               </div>
               <div className="back-side">
@@ -42,7 +42,7 @@ export default class AboutUs extends Component {
 
           <Fade bottom>          
             <div className="flip-card">
-              <div className="front-side" style={{backgroundImage:"url(images/family/fam2.jpg)"}}>
+              <div className="front-side" style={{backgroundImage:"url(https://i.imgur.com/5GwL3Bt.jpg)"}}>
               <h4>Олена Лапко</h4>
               </div>
               <div className="back-side">
@@ -57,7 +57,7 @@ export default class AboutUs extends Component {
 
           <Fade bottom> 
             <div className="flip-card">
-              <div className="front-side" style={{backgroundImage:"url(images/family/fam3.jpg)"}}>
+              <div className="front-side" style={{backgroundImage:"url(https://i.imgur.com/JVKWwqx.jpg)"}}>
               <h4>Єгор Лапко</h4>
               </div>
               <div className="back-side">
@@ -69,7 +69,7 @@ export default class AboutUs extends Component {
 
           <Fade bottom>                                   
             <div className="flip-card">
-              <div className="front-side" style={{backgroundImage:"url(images/family/fam4.jpg)"}}>
+              <div className="front-side" style={{backgroundImage:"url(https://i.imgur.com/8rb82lA.jpg)"}}>
               <h4>Анастасія Лапко</h4>
               </div>
               <div className="back-side">
@@ -82,7 +82,7 @@ export default class AboutUs extends Component {
 
           <Fade bottom> 
             <div className="flip-card">
-              <div className="front-side" style={{backgroundImage:"url(images/family/fam5.jpg)"}}>
+              <div className="front-side" style={{backgroundImage:"url(https://i.imgur.com/YMDhALx.jpg)"}}>
               <h4>Степан Лапко</h4>
               </div>
               <div className="back-side">
@@ -94,7 +94,7 @@ export default class AboutUs extends Component {
 
           <Fade bottom>           
             <div className="flip-card">
-              <div className="front-side" style={{backgroundImage:"url(images/family/fam6.jpg)"}}>
+              <div className="front-side" style={{backgroundImage:"url(https://i.imgur.com/Ymn90Oj.jpg)"}}>
               <h4>Мар'я Лапко</h4>
               </div>
               <div className="back-side">

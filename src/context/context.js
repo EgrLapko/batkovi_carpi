@@ -8,8 +8,26 @@ class ProductProvider extends Component {
         openMenu: false,
         modalOpen: false,
         imageSRC: '',
-        imageId: ''
+        imageId: '',
+        ukr: true,
+        eng: false
     }
+
+    // ----------- Change lang
+    setENG = () => {
+      this.setState({
+        eng: true,
+        ukr: false
+      })
+    }
+
+    setUKR = () => {
+      this.setState({
+        ukr: true,
+        eng: false
+      })
+    }
+
 
     // ----------- Open Menu
     handleMenu = () => {
@@ -49,7 +67,9 @@ class ProductProvider extends Component {
           handleMenu: this.handleMenu,
           handleModal: this.handleModal,
           nextImage: this.nextImage,
-          closeMenu: this.closeMenu
+          closeMenu: this.closeMenu,
+          setENG: this.setENG,
+          setUKR: this.setUKR
       }}>
           {this.props.children}
       </ProductContext.Provider>

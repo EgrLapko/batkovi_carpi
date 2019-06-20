@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import {ProductConsumer} from '../../context/context';
+import { english, ukrainian } from '../../language';
 
 export default class ModalImage extends Component {
     render() {
         return (
             <ProductConsumer>
                 {value => {
-                    const {modalOpen, imageSRC, handleModal, nextImage, imageId} = value;
+                    const {modalOpen, imageSRC, handleModal, imageId, eng, ukr} = value;
                     return (
                         <div className={"modal-container " + (modalOpen ? "visible" : '')}>
-                            <button className="btn move-btn">Тільки назад</button>
                             <div className="modal-image-container">
                                 <img src={imageSRC} id={imageId} alt=""/>
                             </div>   
-                            <button className="btn modal-close-btn" onClick={handleModal}>Закрити</button> 
-                            <button className="btn move-btn" onClick={() => nextImage(imageId, imageSRC)}>Тільки вперед</button>
+                            <button className="btn modal-close-btn" onClick={handleModal}>{eng ? english.btnClose : ukrainian.btnClose}</button> 
                         </div>
                     )
                 }}

@@ -4,6 +4,7 @@ import photos from './photos';
 import GalleryPhoto from './GalleryPhoto';
 import {ProductConsumer} from '../../context/context';
 import ModalImage from './ModalImage';
+import { english, ukrainian } from '../../language';
 
 export default class Gallery extends Component {
  
@@ -16,16 +17,15 @@ export default class Gallery extends Component {
     return (
       <ProductConsumer>
         {value => {
+          const { eng, ukr } = value;
           return (
             <div className="gallery-section section-1">          
               <img className="logo-dark" src="./images/icon.png" alt=""/>
               <Fade>
-                <h2>Галерея</h2>
+                <h2> {eng ? english.galleryTitle : ukrainian.galleryTitle} </h2>
               </Fade>
               <Fade bottom>
-                <video width="800" controls>
-                  <source src="./videos/Batkovi_Carpi.mp4" type="video/mp4"/>
-                </video>
+              <iframe title="carpi-vid" src="https://drive.google.com/file/d/1wvAY5NpbvdwYiYQqOtx8fHE6uB_cLeyN/preview" width="1024" height="580"/>
               </Fade>
               <div className="inner-section">
                 <Fade bottom>

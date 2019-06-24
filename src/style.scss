@@ -845,4 +845,14 @@ button:focus {outline:0;}
       @include flexbox;
   }
 
+  @media (max-width: 800px) {
+      .modal-container {
+          .modal-image-container {
+              img {
+                  width: 100%;
+              }
+          }
+      }
+  }
+
   

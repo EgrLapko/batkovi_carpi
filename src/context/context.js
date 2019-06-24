@@ -10,9 +10,9 @@ class ProductProvider extends Component {
         imageSRC: '',
         imageId: '',
         ukr: true,
-        eng: false,
-        showBio: false
+        eng: false
     }
+
 
     // ----------- Change lang
     setENG = () => {
@@ -53,32 +53,15 @@ class ProductProvider extends Component {
       })
     }
 
-    // ----------- Navigation between images
-    nextImage = (id, imageSRC) => {
-      console.log(`current image id is: ${id} amd image path is: ${imageSRC}`)
-      this.setState({
-        imageId: id + 1
-      })
-    }
-
-    // ----------- Toggle Bio in About Section
-    toggleBio = () => {
-      this.setState({
-        showBio: ! this.state.showBio
-      })
-    }
-
   render() {
     return (
       <ProductContext.Provider value = {{
           ...this.state,
           handleMenu: this.handleMenu,
           handleModal: this.handleModal,
-          nextImage: this.nextImage,
           closeMenu: this.closeMenu,
           setENG: this.setENG,
-          setUKR: this.setUKR,
-          toggleBio: this.toggleBio
+          setUKR: this.setUKR
       }}>
           {this.props.children}
       </ProductContext.Provider>

@@ -17,7 +17,7 @@ export default class LandingPage extends Component {
     
       <ProductConsumer>
         {value => {
-          const { eng, ukr } = value;
+          const { eng } = value;
           return (
             <React.Fragment>
               <ParallaxBanner

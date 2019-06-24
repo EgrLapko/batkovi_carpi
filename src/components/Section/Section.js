@@ -20,16 +20,16 @@ export default class Section extends Component {
             </div>
             <div className="icons-container">
                 <div className="section-icon">
-                  <p> <i className= {icon1} ></i> </p>
-                  <p> {icontext1} </p>
+                  <p className="icon-container"> <i className= {icon1} ></i> </p>
+                  <p className="icon-text"> {icontext1} </p>
                 </div>
                 <div className="section-icon">
-                  <p> <i className= {icon2} ></i> </p>
-                  <p> {icontext2} </p>
+                  <p className="icon-container"> <i className= {icon2} ></i> </p>
+                  <p className="icon-text"> {icontext2} </p>
                 </div>
                 <div className="section-icon">
-                  <p> <i className= {icon3} ></i> </p>
-                  <p> {icontext3} </p>
+                  <p className="icon-container"> <i className= {icon3} ></i> </p>
+                  <p className="icon-text"> {icontext3} </p>
                 </div>
             </div>
           </Fade>       

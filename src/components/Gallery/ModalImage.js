@@ -7,7 +7,7 @@ export default class ModalImage extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const {modalOpen, imageSRC, handleModal, imageId, eng, ukr} = value;
+                    const {modalOpen, imageSRC, handleModal, imageId, eng } = value;
                     return (
                         <div className={"modal-container " + (modalOpen ? "visible" : '')}>
                             <div className="modal-image-container">

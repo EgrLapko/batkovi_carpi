@@ -20,7 +20,7 @@ export default class ParallaxBanner extends Component {
                 <Fade>
                     <div className = "parallax-text">
                         <img src="./images/icon_white.png" alt=""/>
-                        <h2> {title} </h2>              
+                        <h2 className="original-title"> {title} </h2>              
                         <p> {text} </p>
                     </div>
                 </Fade>

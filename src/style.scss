@@ -14,10 +14,8 @@ $firmOrange: rgba(237, 92, 10, 1);
 body {
     margin: 0;
     padding: 0;
-    font-family: $fontukrainian;
     line-height: 1.5;
     color: #333;
-    // background-color: $mainDark;
     overflow-x: hidden;
     a {
         color: inherit;
@@ -34,8 +32,8 @@ body {
 .scroll-to-top {
     z-index: 4;
     font-size: 1rem;
-    color: $pureWhite;
     font-family: $fontukrainian;
+    color: $pureWhite;
     opacity: .6;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
 }
@@ -51,12 +49,12 @@ body {
 
   .btn {
     font-size: 1.1rem;
-    font-family: $fontukrainian;
     margin-top: 3rem;
     color: $pureWhite;
     font-weight: 300;
     text-transform: lowercase;
     background-color: $secondaryDark;
+    font-family: $fontukrainian;
     padding: 1rem;
     border-radius: 1rem;
     transition: .2s;
@@ -88,7 +86,6 @@ button:focus {outline:0;}
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .3);
     transition: .5s;
     li {
-        font-family: $fontukrainian;
         margin-left: 1rem;
         margin-right: 1rem;
         font-size: 1.1rem;
@@ -123,7 +120,13 @@ button:focus {outline:0;}
             margin: 0;
             padding: .5rem;
             border-radius: 0;
-            background-color: rgba(106, 105, 105, .3);
+            background-color: $mainDark;
+            font-family: $fontPrimary;
+            font-size: .8rem;
+            cursor: pointer;
+        }
+        .active-lang-btn {
+            background-color: $firmOrange;
         }
         .lang-btn:hover {
             background-color: $firmOrange;
@@ -185,7 +188,6 @@ button:focus {outline:0;}
             font-size: 8rem;
             color: $pureWhite;
             font-weight: 300;
-            font-family: $fontSecondary;
             cursor: default;
             margin: 0;
         }
@@ -193,25 +195,24 @@ button:focus {outline:0;}
             font-size: 1.4rem;
             color: $pureWhite;
             font-weight: 100;
-            font-family: $fontukrainian;
             cursor: default;
             margin: 0;
             max-width: 50%;
         }
+        .original-title {
+            font-family: $fontSecondary;
+        }
   }
   .parallax-text-2 {
       h2{
-        font-size: 2.5rem;
-        font-family: $fontukrainian;
+        font-size: 3rem;
       }
       p {
         font-size: 1.2rem;
-        font-family: $fontukrainian;
       }
   }
   .btn {
     font-size: 1.1rem;
-    font-family: $fontukrainian;
     margin-top: 3rem;
     color: $pureWhite;
     font-weight: 300;
@@ -241,7 +242,6 @@ button:focus {outline:0;}
         padding: 1rem;
         h2 {
             font-size: 2rem;
-            font-family: $fontukrainian;
             color: rgba(0, 0, 0, .7);
             font-weight: 300;
             cursor: default;
@@ -250,25 +250,28 @@ button:focus {outline:0;}
         p {
             font-size: 1.2rem;
             width: 100%;
-            font-family: $fontukrainian;
         }
     }
     .icons-container {
         @include flexbox;
+        align-items: flex-start;
         margin-top: 2rem;
+        width: 50%;
+        min-height: 15rem;
         .section-icon {
-            @include flexbox;
             flex-direction: column;
-            padding: 1rem;
+            justify-content: flex-start;
             flex-wrap: wrap;
-            width: 13rem;
-            height: 200px;
             text-align: center;
+            margin: 0rem 1rem;
             opacity: .7;
             cursor: default;
             transition: .3s;
             i {
-                font-size: 3rem;
+                font-size: 3rem;    
+            }
+            .icon-text { 
+                width: 10rem;      
             }
         }
         .section-icon:hover {
@@ -372,34 +375,57 @@ button:focus {outline:0;}
                 width: 100%;
                 height: 100%;
                 .bio-img {
+                    visibility: visible;
+                    opacity: 1;
                     display: flex;
                     width: 100%;
+                    cursor: pointer;  
+                    animation: appearing .3s;
+                }
+                .invisible {
+                    display: none;
                 }
                 .bio-text-container {
                     display: none;
                     width: 100%;
-                    height: 100%;
+                    height: 90%;
                     padding: .5rem;
                     margin-top: .5rem;
-                    flex-direction: column;
-                    justify-content: space-between;
                     .bio-btn{
                         padding: .8rem;
                         border-radius: 7px;
                     }
                 }
+                @keyframes appearing {
+                    0% {
+                      display: visible;
+                      opacity: 0;
+                      transform: scale(0.9);
+                    }
+                    100% {
+                      opacity: 1;
+                      transform: scale(1);
+                    }
+                  }
+                .bio-visible {
+                    @include flexbox;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    animation: appearing .3s;
+                }
+            }
+            .family-card-name {
+                font-size: 1.4rem;
+                margin: 0;
+                cursor: pointer;
             }
         }
       }  
     }
 
-.invisible {
-    display: none;
-}
 
-.bio-visible {
-    @include flexbox;
-}
+
+
 
 
   // ------------------------------------ GALLERY
@@ -425,7 +451,6 @@ button:focus {outline:0;}
         text-transform: lowercase;
         border: none;
         background-color: $secondaryDark;
-        font-family: $fontukrainian;
         padding: 1rem;
         margin: 1rem 0;
         border-radius: 10px;
@@ -625,6 +650,10 @@ button:focus {outline:0;}
         position: sticky;
         z-index: 4;
         top: 0;
+        .lang-section {
+            position: absolute;
+            right: 6rem;
+        }
     }
     .slidemenu {
         @include flexbox;
@@ -648,9 +677,10 @@ button:focus {outline:0;}
         .parallax-text-2 {
             h2 {
                 font-size: 2.2rem;
+                padding: 1rem;
             }
             p {
-                font-size: .9rem;
+                font-size: 1.05rem;
                 max-width: 90%;
                 margin-top: 1rem;
                 line-height: 1.4rem;
@@ -666,6 +696,9 @@ button:focus {outline:0;}
         flex-direction: column;
         .icons-container {
             flex-direction: column;
+            align-items: center;
+            width: 15rem;
+            margin: 0;
             .section-icon {
                 padding: 0;
             }

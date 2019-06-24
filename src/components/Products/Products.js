@@ -13,7 +13,7 @@ export default class Products extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const { eng, ukr } = value;
+          const { eng } = value;
           return (
             <div className="products-inner-container">
               <img className="logo-dark" src="./images/icon.png" alt=""/>

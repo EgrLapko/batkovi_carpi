@@ -17,7 +17,7 @@ export default class Gallery extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const { eng, ukr } = value;
+          const { eng } = value;
           return (
             <div className="gallery-section section-1">          
               <img className="logo-dark" src="./images/icon.png" alt=""/>

@@ -11,12 +11,15 @@ import { ProductConsumer } from './context/context';
 
 export default class App extends Component {
   render() {
+    let engFont = {fontFamily: "'Cinzel', serif"};
+    let ukrFont = {fontFamily: "'Cormorant Unicase', serif"}
+
     return (
       <ProductConsumer>
         {value => {
           const { eng } = value;
           return (
-            <React.Fragment>
+            <div className="whole-wrapper" style = {eng ? engFont : ukrFont}>
               <Navbar />
               <Sidebar />
                   <ScrollTop 
@@ -26,12 +29,12 @@ export default class App extends Component {
                     style={{ 
                       backgroundColor: "#2C2C2C",
                       border: "1px solid rgba(255, 255, 255, .2)",
-                      borderRadius: "5px"
+                      borderRadius: "5px",
                     }}
                   />               
               <Main />       
               <Footer /> 
-            </React.Fragment>    
+            </div>    
           )
         }}
       </ProductConsumer>     

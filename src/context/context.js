@@ -53,6 +53,13 @@ class ProductProvider extends Component {
       })
     }
 
+    changeModalImage = (id, photo) => {
+      this.setState({
+        imageSRC: photo,
+        imageId: id
+      })
+    }
+
   render() {
     return (
       <ProductContext.Provider value = {{
@@ -61,7 +68,8 @@ class ProductProvider extends Component {
           handleModal: this.handleModal,
           closeMenu: this.closeMenu,
           setENG: this.setENG,
-          setUKR: this.setUKR
+          setUKR: this.setUKR,
+          changeModalImage: this.changeModalImage
       }}>
           {this.props.children}
       </ProductContext.Provider>

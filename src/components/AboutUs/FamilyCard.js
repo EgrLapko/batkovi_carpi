@@ -29,7 +29,7 @@ export default class FamilyCard extends Component {
                                     <button className="btn bio-btn" onClick={this.toggleBio}> {eng ? english.btnClose : ukrainian.btnClose } </button>
                                 </div>
                             </div>       
-                            <p className="family-card-name"> {name} </p>
+                            <p className="family-card-name" onClick={this.toggleBio}> {name} </p>
                         </div>
                     )
                 }}               

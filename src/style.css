@@ -1059,6 +1059,9 @@ button:focus {
   -ms-flex-align: center;
   align-items: center; }
 
-@media (max-width: 800px) {
-  .modal-container .modal-image-container img {
-    width: 100%; } }
+@media (max-width: 750px) {
+  .modal-container .modal-image-container {
+    height: 25rem;
+    margin-top: 0; }
+    .modal-container .modal-image-container img {
+      height: 100%; } }

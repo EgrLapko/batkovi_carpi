@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 export default class ParallaxBanner extends Component {
   render() {
 
-    const {url, title, text, height} = this.props;
+    const {url, title, text, height, btnName} = this.props;
 
     const imgUrl = url;
     const imgHeight = height;
@@ -16,14 +17,12 @@ export default class ParallaxBanner extends Component {
 
     return (
         <React.Fragment>      
-            <div className = "parallax-banner" style={divStyle}>
-                <Fade>
-                    <div className = "parallax-text">
-                        <img src="./images/icon_white.png" alt=""/>
-                        <h2 className="original-title"> {title} </h2>              
-                        <p> {text} </p>
-                    </div>
-                </Fade>
+            <div className="parallax-banner" style={divStyle}>
+                <Fade bottom>
+                    <h2 className="parallax-title"> {title} </h2>              
+                    <p className="parallax-desc"> {text} </p>
+                    <button className="btn"><Link to= "/products">{btnName}</Link></button>            
+                </Fade>        
             </div>
         </React.Fragment>      
     )

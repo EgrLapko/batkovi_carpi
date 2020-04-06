@@ -6,7 +6,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Gallery from './components/Gallery/Gallery';
 import Products from './components/Products/Products';
 
-export default function Main () {
+const Main = () => {
   return (
     <Switch>
         <Route exact path = '/' component = {LandingPage} />
@@ -16,3 +16,5 @@ export default function Main () {
     </Switch>
   )
 }
+
+export default Main;

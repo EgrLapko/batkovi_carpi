@@ -14,10 +14,8 @@ export default class Section extends Component {
     return (
         <section className="landing-section" style = {divStyle}>
           <Fade bottom>
-            <div className="section-container">
-                <h2> {title} </h2>
-                <p> {text} </p>
-            </div>
+                <h2 className="section-title"> {title} </h2>
+                <p className="section-desc"> {text} </p>
             <div className="icons-container">
                 <div className="section-icon">
                   <p className="icon-container"> <i className= {icon1} ></i> </p>

@@ -1,49 +1,64 @@
-import React, { Component } from 'react';
+import React, {useEffect} from 'react';
 import Fade from 'react-reveal/Fade';
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
+
 import photos from './photos';
 import GalleryPhoto from './GalleryPhoto';
 import {ProductConsumer} from '../../context/context';
-import ModalImage from './ModalImage';
 import { english, ukrainian } from '../../language';
+import Title from '../Title';
+import LogoDark from '../LogoDark';
 
-export default class Gallery extends Component {
- 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+const Gallery = () => {
 
-  render() {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})  
+  }, [])
 
-    return (
-      <ProductConsumer>
-        {value => {
-          const { eng } = value;
-          return (
-            <div className="gallery-section section-1">          
-              <img className="logo-dark" src="./images/icon.png" alt=""/>
-              <Fade>
-                <h2> {eng ? english.galleryTitle : ukrainian.galleryTitle} </h2>
-              </Fade>
-              <Fade bottom>
-              <iframe title="carpi-vid" src="https://drive.google.com/file/d/1wvAY5NpbvdwYiYQqOtx8fHE6uB_cLeyN/preview" width="1024" height="580"/>
-              </Fade>
-              <div className="inner-section">
-                <Fade bottom>
-                  {
-                    photos.map(item => <GalleryPhoto 
-                      key = {item.id}
-                      imgSrc = {item.photo}
-                      photoId = {item.id}
-                    />)
-                  }
-                </Fade>
-                <ModalImage />
-              </div>      
+  const options = {
+    showCaption: false,
+    showThumbnails: false,
+    transitionSpeed: 400,
+    transitionTimingFunction: "linear",
+  };
+
+  return (
+    <ProductConsumer>
+      {value => {
+        const { eng } = value;
+        return (
+          <div className="gallery">          
+            <LogoDark />
+            <Title title={eng ? english.galleryTitle : ukrainian.galleryTitle}/>
+            <Fade bottom>
+            <div className="gallery__videos">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Cit8WjjoE0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>            
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SOAYTogN8yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
             </div>
-          )
-        }}
-      </ProductConsumer>
-        
-    )
-  }
+            </Fade>
+
+            <SimpleReactLightbox>
+              <SRLWrapper options={options}>
+                <div className="gallery__image-container">
+                  <Fade bottom>
+                    {
+                      photos.map(item => <GalleryPhoto 
+                        key = {item.id}
+                        imgSrc = {item.photo}
+                        photoId = {item.id}
+                      />)
+                    }
+                  </Fade>
+                </div>      
+              </SRLWrapper>
+            </SimpleReactLightbox>
+
+          </div>
+        )
+      }}
+    </ProductConsumer>
+  )
 }
+
+
+export default Gallery;

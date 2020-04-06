@@ -42,6 +42,16 @@ const photos = [{
     photo: "https://i.imgur.com/fHGquw1.jpg",
     id: 9,
     caption: "",
+  },
+  {
+    photo: "https://i.imgur.com/fG0lfgt.jpg",
+    id: 10,
+    caption: "",
+  },
+  {
+    photo: "https://i.imgur.com/nd9ubTe.jpg",
+    id: 11,
+    caption: "",
   }
 ];
 

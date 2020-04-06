@@ -1,26 +1,24 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { ProductConsumer } from '../../context/context';
 
 import ParallaxBanner from '../ParallaxBanner/ParallaxBanner';
-import ParallaxBanner2 from '../ParallaxBanner/ParallaxBanner2';
 import Section from '../Section/Section';
 import { english, ukrainian } from '../../language';
+import LandingHead from '../ParallaxBanner/LandingHead';
 
-export default class LandingPage extends Component {
+export const LandingPage = () => {
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-  
-  render() {
-    return (
-    
-      <ProductConsumer>
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+  }, [])
+
+  return (
+    <ProductConsumer>
         {value => {
           const { eng } = value;
           return (
             <React.Fragment>
-              <ParallaxBanner
+              <LandingHead
                 url="https://i.imgur.com/qcMNHfg.jpg"
                 title="Batkovi Carpi" 
                 text={eng ? english.mainDesc : ukrainian.mainDesc}
@@ -37,11 +35,11 @@ export default class LandingPage extends Component {
                 icon3 = "fas fa-globe-europe"
                 icontext3 = {eng ? english.carpiIcon3 : ukrainian.carpiIcon3}
               />
-              <ParallaxBanner2
+              <ParallaxBanner
                 url="https://i.imgur.com/ZczP30I.jpg"
                 title={eng ? english.historyCarpiTitle : ukrainian.historyCarpiTitle}
                 text={eng ? english.historyCarpiText : ukrainian.historyCarpiText}
-                height = "65"
+                height = "60"
                 btnName={eng ? english.buttonName : ukrainian.buttonName}
               />
               <Section 
@@ -55,11 +53,11 @@ export default class LandingPage extends Component {
                 icon3 = "fas fa-weight"
                 icontext3 = {eng ? english.shashlikIcon3 : ukrainian.shashlikIcon3}
               />
-              <ParallaxBanner2
+              <ParallaxBanner
                 url="https://i.imgur.com/DGeWacD.jpg"
                 title={eng ? english.historyShashlikTitle : ukrainian.historyShashlikTitle}
                 text={eng ? english.historyShashlikText : ukrainian.historyShashlikText}
-                height = "65"
+                height = "60"
                 btnName={eng ? english.buttonName : ukrainian.buttonName}
               />
               <Section 
@@ -73,17 +71,18 @@ export default class LandingPage extends Component {
                 icon3 = "fas fa-smile-wink"
                 icontext3 = {eng ? english.krowIcon3 : ukrainian.krowIcon3}
               />
-              <ParallaxBanner2
+              <ParallaxBanner
                 url="https://i.imgur.com/fyJyAIa.jpg"
                 title={eng ? english.historyKrowTitle : ukrainian.historyKrowTitle}
                 text= {eng ? english.historyKrowText : ukrainian.historyKrowText}
-                height = "65"
+                height = "60"
                 btnName={eng ? english.buttonName : ukrainian.buttonName}
               />
             </React.Fragment>
           )
         }}
       </ProductConsumer>
-    )
-  }
+  )
 }
+
+export default LandingPage;

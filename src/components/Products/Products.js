@@ -1,31 +1,34 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { english, ukrainian } from '../../language';
 import { ProductConsumer } from '../../context/context';
+import LogoDark from '../LogoDark';
+import Title from '../Title';
+import ProductCard from './ProductCard';
 
-export default class Products extends Component {
+export const Products = () => {
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+  }, [])
 
-  render() {
-    return (
-      <ProductConsumer>
+  return (
+    <ProductConsumer>
         {value => {
           const { eng } = value;
           return (
-            <div className="products-inner-container">
-              <img className="logo-dark" src="./images/icon.png" alt=""/>
+            <div className="products">
+              <LogoDark />
               <Fade>
-                <div className="products-text-container">
-                  <h2> {eng ? english.orderTitle : ukrainian.orderTitle} </h2>
-                  <p>{eng ? english.orderText : ukrainian.orderText}</p>
-                  
+                <div className="products__order-container">
+                  <h2 className="title">
+                    {eng ? english.orderTitle : ukrainian.orderTitle}
+                  </h2>
+                  <p className="text">{eng ? english.orderText : ukrainian.orderText}</p>
                   <div className="form-container">
                       <form className="form-inline" action="">
-                        <input type="email" id="email" placeholder="Enter email" name="email"/>
-                        <a className="submit-btn" href='/'> {eng ? english.okButton : ukrainian.okButton} </a>
+                        <input type="email" id="email" placeholder="Enter your email" name="email"/>
+                        <button className="btn"> {eng ? english.okButton : ukrainian.okButton} </button>
                       </form>
                   </div>       
                 </div>
@@ -34,41 +37,35 @@ export default class Products extends Component {
               <div className="cards-container">
 
                 <Fade bottom>
-                  <div className="card">
-                    <img src="https://i.imgur.com/PBpEYpL.jpg" alt=""/>
-                    <h3>{eng ? english.prodKrowDesc : ukrainian.prodKrowDesc}</h3>
-                    <div className="product-details">
-                      <h3>{eng ? english.priceKrow : ukrainian.priceKrow}</h3>
-                    </div>
-                  </div>
+                  <ProductCard 
+                    img="https://i.imgur.com/PBpEYpL.jpg"
+                    title={eng ? english.prodKrowDesc : ukrainian.prodKrowDesc}
+                    price={eng ? english.priceKrow : ukrainian.priceKrow}
+                  />
                 </Fade>
 
                 <Fade bottom>
-                  <div className="card">
-                    <img src="https://i.imgur.com/Yo71hmt.jpg" alt=""/>
-                    <h3>{eng ? english.prodCarpiDesc : ukrainian.prodCarpiDesc}</h3>
-                    <div className="product-details">
-                      <h3>{eng ? english.priceCarpi : ukrainian.priceCarpi}</h3>
-                    </div>
-                  </div>
+                  <ProductCard 
+                    img="https://i.imgur.com/Yo71hmt.jpg"
+                    title={eng ? english.prodCarpiDesc : ukrainian.prodCarpiDesc}
+                    price={eng ? english.priceCarpi : ukrainian.priceCarpi}
+                  />
                 </Fade>
 
                 <Fade bottom>
-                  <div className="card">
-                    <img src="https://i.imgur.com/KTlslNo.jpg" alt=""/>
-                    <h3>{eng ? english.prodShashlikDesc : ukrainian.prodShashlikDesc}</h3>
-                    <div className="product-details">
-                      <h3>{eng ? english.priceShashlik : ukrainian.priceShashlik}</h3>
-                    </div>
-                  </div>
-                </Fade>
+                  <ProductCard 
+                    img="https://i.imgur.com/KTlslNo.jpg"
+                    title={eng ? english.prodShashlikDesc : ukrainian.prodShashlikDesc}
+                    price={eng ? english.priceShashlik : ukrainian.priceShashlik}
+                  />
+                </Fade> 
 
               </div>    
             </div>
           )
         }}
       </ProductConsumer>
-        
-    )
-  }
+  )
 }
+
+export default Products;

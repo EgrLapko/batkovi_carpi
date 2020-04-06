@@ -22,16 +22,16 @@ export default class App extends Component {
             <div className="whole-wrapper" style = {eng ? engFont : ukrFont}>
               <Navbar />
               <Sidebar />
-                  <ScrollTop 
-                    text={eng ? english.toTopButton : ukrainian.toTopButton}
-                    className="scroll-to-top"
-                    distance={300}
-                    style={{ 
-                      backgroundColor: "#2C2C2C",
-                      border: "1px solid rgba(255, 255, 255, .2)",
-                      borderRadius: "5px",
-                    }}
-                  />               
+              <ScrollTop 
+                text={eng ? english.toTopButton : ukrainian.toTopButton}
+                className="scroll-to-top"
+                distance={300}
+                style={{ 
+                  backgroundColor: "#2C2C2C",
+                  border: "1px solid rgba(255, 255, 255, .2)",
+                  borderRadius: "5px",
+                }}
+              />               
               <Main />       
               <Footer /> 
             </div>    

@@ -1,27 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { ProductConsumer } from '../../context/context';
+import { connect } from 'react-redux';
+import {toggleMobileMenu } from '../../redux/actions';
 
-const NavbarMobile = () => {
+const NavbarMobile = ({ toggleMobileMenu }) => {
     return (
-        <ProductConsumer>
-            {value => {
-                const { handleMenu } = value;
-                return (
-                    <nav className='navbar-mobile'>
-                        <div className="nav-logo">
-                            <Link to = "/"><img src="./icon_white.png" alt=""/></Link>
-                        </div>
-                        <div className="hamburger" onClick={handleMenu}>
-                            <i className ="fas fa-bars"/>
-                        </div>
-                    </nav>
-                )
-            }}
-        </ProductConsumer>
+
+        <nav className='navbar-mobile'>
+            <div className="nav-logo">
+                <Link to = "/"><img src="./icon_white.png" alt=""/></Link>
+            </div>
+            <div className="hamburger" onClick={toggleMobileMenu}>
+                <i className ="fas fa-bars"/>
+            </div>
+        </nav>
         
     )
 }
 
-export default NavbarMobile;
+const mapDispatchToProps = dispatch => ({
+    toggleMobileMenu: () => dispatch(toggleMobileMenu())
+})
+
+export default connect(null, mapDispatchToProps)(NavbarMobile);

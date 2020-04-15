@@ -1,43 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
 import './style.css';
 import Navbar from './components/Navbar/Navbar';
 import Main from './Main';
 import Footer from './components/Footer/Footer';
-import ScrollTop from 'react-scrolltop-button';
-import Sidebar from './components/Navbar/Sidebar';
-import { english, ukrainian } from './language';
-import { ProductConsumer } from './context/context';
+import Sidebar from './components/Navbar/Sidebar'; 
 
-export default class App extends Component {
-  render() {
-    let engFont = {fontFamily: "'Cinzel', serif"};
-    let ukrFont = {fontFamily: "'Cormorant Unicase', serif"}
+export const App = ( { langENG } ) => {
 
-    return (
-      <ProductConsumer>
-        {value => {
-          const { eng } = value;
-          return (
-            <div className="whole-wrapper" style = {eng ? engFont : ukrFont}>
-              <Navbar />
-              <Sidebar />
-              <ScrollTop 
-                text={eng ? english.toTopButton : ukrainian.toTopButton}
-                className="scroll-to-top"
-                distance={300}
-                style={{ 
-                  backgroundColor: "#2C2C2C",
-                  border: "1px solid rgba(255, 255, 255, .2)",
-                  borderRadius: "5px",
-                }}
-              />               
-              <Main />       
-              <Footer /> 
-            </div>    
-          )
-        }}
-      </ProductConsumer>     
-    )
+  let engFont = {fontFamily: "'Cinzel', serif"};
+  let ukrFont = {fontFamily: "'Cormorant Unicase', serif"}
+
+  return (
+    <div className="whole-wrapper" style = {langENG ? engFont : ukrFont}>
+      <Navbar />
+      <Sidebar />            
+      <Main />       
+      <Footer /> 
+    </div>    
+  )
+}
+
+const mapStateToProps = state => {
+  return {
+    langENG: state.app.eng,
   }
 }
+export default connect(mapStateToProps)(App)
